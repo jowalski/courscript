@@ -13,8 +13,11 @@ class Courscript:
     def __init__(self, title_dir, path="*/*.srt"):
         self.title_dir, self.srt_path = title_dir, path
 
+<<<<<<< HEAD
     title_dir = ''
     srt_path = ''
+=======
+>>>>>>> d770ce59837f9c22a0f95409feb04b480a4158ee
     wrapper = textwrap.TextWrapper()
 
     @classmethod
@@ -75,7 +78,11 @@ class Courscript:
             # where the first ends
             if sub1[cls.END] != sub2[cls.START]:
                 sub1[cls.LINE] = 'break'
+<<<<<<< HEAD
         return subs_lst
+=======
+                return subs_lst
+>>>>>>> d770ce59837f9c22a0f95409feb04b480a4158ee
 
     @classmethod
     def slicebreaks(cls, srtlst):
@@ -103,7 +110,11 @@ class Courscript:
             start, end = subs[0][self.START], subs[-1][self.END]
             # use the text wrapper here to create nicely formatted lines
             paras += [(self.wrapper.wrap(u' '.join(text)), start, end)]
+<<<<<<< HEAD
         return paras
+=======
+            return paras
+>>>>>>> d770ce59837f9c22a0f95409feb04b480a4158ee
 
     @staticmethod
     def write_period(start, end):
@@ -132,9 +143,15 @@ class Courscript:
         d = collections.defaultdict(list)
         for i, item in enumerate(mylist):
             d[item].append(i)
+<<<<<<< HEAD
         firsts = [v[0] for k, v in d.items()]
         firsts.sort()
         return(firsts)
+=======
+            firsts = [v[0] for k, v in d.items()]
+            firsts.sort()
+            return(firsts)
+>>>>>>> d770ce59837f9c22a0f95409feb04b480a4158ee
 
     @staticmethod
     def format_header(level, num, title, base=1):
@@ -153,7 +170,11 @@ class Courscript:
         """Print a md file of subtitle transcripts.
         """
         # get a list of srt files and folder hierarchy
+<<<<<<< HEAD
         srts = self.get_filelist(self.title_dir + u'/' + self.srt_path)
+=======
+        srts = self.get_filelist(self.title_dir + u'/' + self.path)
+>>>>>>> d770ce59837f9c22a0f95409feb04b480a4158ee
 
         # converting folder names to header names
         hdrs, srt_fs = zip(*srts)
