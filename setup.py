@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # https://packaging.python.org/en/latest/distributing/#working-in-development-mode
 setup(name='courscript',
@@ -10,7 +10,12 @@ setup(name='courscript',
       author='John Kowalski',
       author_email='jowalski@gmail.com',
       license='MIT',
-      packages=['courscript'],
+      packages=find_packages(),
+      install_requires=['pysrt'],
+      entry_points={
+          'console_scripts': [
+              'courscript = courscript.cli:CourscriptCLI'
+          ]},
       keywords="subtitle course coursera srt",
       platforms=["Independent"],
       # https://pypi.python.org/pypi?%3Aaction=list_classifiers
