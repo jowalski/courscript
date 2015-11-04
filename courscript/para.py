@@ -37,7 +37,7 @@ class CoursePara:
 
 class CourseParalist:
 
-    def __init__(self, sublist, headers, print_times=True):
+    def __init__(self, sublist, headers, print_times=False):
         self.paras = self._make_paras(sublist)
         self.headers = headers
         self.print_times = print_times
