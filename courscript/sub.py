@@ -65,6 +65,14 @@ class CourseSublist:
                 sub1.set_break()
         return(subs)
 
+    def _mark_breaks_d(self, subs, d):
+        for sub1, sub2 in self.pairwise(subs):
+            # mark 'break' if second subtitle doesn't begin
+            # where the first ends
+            if sub1 < sub2 and (sub2 - sub1) < d:
+                sub1.set_break()
+        return(subs)
+
     def slicebreaks(self):
         """slice by breaks
         """
