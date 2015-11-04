@@ -1,5 +1,5 @@
 import textwrap
-from timefuns import format_start_end
+from courscript.timefuns import format_start_end
 import reprlib
 import sys
 

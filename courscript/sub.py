@@ -1,7 +1,8 @@
 import pysrt
 import itertools
 import reprlib
-from timefuns import format_start_end
+from courscript.timefuns import format_start_end
+from courscript.error import CoursError
 
 
 class CourseSub:

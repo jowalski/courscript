@@ -1,7 +1,7 @@
-from courscript.file import CourseFilelist
-from courscript.header import CourseHeaderList
-from courscript.sub import CourseSublist
-from courscript.para import CourseParalist
+from folder import CourseFilelist
+from header import CourseHeaderList
+from sub import CourseSublist
+from para import CourseParalist
 import sys
 
 
