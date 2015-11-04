@@ -26,6 +26,16 @@ class CourseSub:
     def __gt__(self, other):
         return self.start > other.end
 
+    def __sub__(self, other):
+        """Subs must be separate for this (and lt, eq) to be meaningful.
+        """
+        if self < other:
+            return other.start - self.end
+        elif self > other:
+            return self.start - other.end
+        else:
+            raise CoursError('Subtracting non-separate CourseSubs')
+
     def set_break(self):
         self.isbreak = True
 
