@@ -1,5 +1,6 @@
 import docopt
 import os.path
+import sys
 from courscript.courscript import Courscript
 
 
@@ -9,7 +10,8 @@ class CourscriptCLI:
 
     def _entry(self):
         doc_str = """
-        Usage: courscript [-vqrh] <FOLDER> [--path=<path>] <FILE_OUT>
+
+        Usage: courscript [-h] <FOLDER> <FILE_OUT> [options]
 
         Convert srt files in FOLDER (at some level, not necessarily the first)
         into a nicely formatted markdown document.
@@ -20,20 +22,20 @@ class CourscriptCLI:
 
         Options:
           -h --help
-          -v           verbose mode
-          -q           quiet mode
-          -r           make report
-          --path=path  srt file paths [default: */*.srt]
-
+          -l split --split=split    split filename pattern [default: _]
+          -s sub --sub=sub          sub filename pattern [default: -]
+          -p path --path=path       srt file paths [default: */*.srt]
+          -d slides --slides=sld    pdf slide file paths
         """
         args = docopt.docopt(doc_str, version='courscript version 0.1')
 
         folder = args['<FOLDER>']
         if not os.path.isdir(folder):
             exit('{} is not a folder'.format(folder))
-        if '--path' in args:
-            self.cs = Courscript(folder, args['--path'])
-        else:
-            self.cs = Courscript(folder)
+        print(args)
+        self.cs = Courscript(args['<FOLDER>'], args['--path'], 1,
+                             args['--split'], args['--sub'],
+                             args['--slides'])
         with open(args['<FILE_OUT>'], 'w') as f:
             self.cs.print(f)
+        sys.exit()
