@@ -35,7 +35,7 @@ class Para:
         return '{}({})'.format(self.__class__.__name__, value_str)
 
     def __str__(self):
-        return u'\n'.join(self.text)
+        return self.text
 
     def start_end_md(self):
         return u'_({0} - {1})_'.format(self.start.strftime(self.TIME_FMT),
@@ -44,18 +44,16 @@ class Para:
     def linecount(self):
         return len(self.text)
 
-    def _join_text(self, sublist):
-        text = u' '.join(subt.text.decode('utf-8') for subt in sublist)
-        # use the text wrapper here to create nicely formatted lines
-        return(self.wrapper.wrap(text))
 
+class Paralist:
 
-class CourseParalist:
-
-    def __init__(self, sublist, headers, print_times=False):
+    def __init__(self, sublist, headers, slidelist=None, print_times=False):
         self.paras = self._make_paras(sublist)
         self.headers = headers
         self.print_times = print_times
+        self.slidelist = slidelist
+        if slidelist is not None:
+            self._add_slides()
 
     def __repr__(self):
         values = ', '.join('{!r}'.format(i) for i in self.paras)
@@ -79,4 +77,13 @@ class CourseParalist:
     def _make_paras(self, sublist):
         """Form paragraphs from a list of subtitles.
         """
-        return [CoursePara(sublist[slc]) for slc in sublist.slicebreaks()]
+        return [Para.subs(sublist[slc]) for slc in sublist.slicebreaks()]
+
+    def _add_slides(self):
+        ls, lp = len(self.slidelist), len(self.paras)
+        if lp < ls:
+            insertpos = list(range(lp)) + ([lp - 1] * (ls - lp))
+        else:
+            insertpos = [round(i * lp / ls) for i in range(ls)]
+        for i, slide in zip(reversed(insertpos), reversed(self.slidelist)):
+            self.paras.insert(i + 1, Para.slide(slide))
