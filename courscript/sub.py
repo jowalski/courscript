@@ -5,7 +5,7 @@ from courscript.timefuns import format_start_end
 from courscript.error import CoursError
 
 
-class CourseSub:
+class Sub:
 
     def __init__(self, subripitem):
         self.text = subripitem.text.encode('utf-8')
@@ -34,13 +34,13 @@ class CourseSub:
         elif self > other:
             return self.start - other.end
         else:
-            raise CoursError('Subtracting non-separate CourseSubs')
+            raise CoursError('Subtracting non-separate Subs')
 
     def set_break(self):
         self.isbreak = True
 
 
-class CourseSublist:
+class Sublist:
 
     def __init__(self, filename):
         sublist = self.open(filename)
@@ -54,7 +54,7 @@ class CourseSublist:
         return self.sublist[position]
 
     def open(self, filename):
-        sublist = [CourseSub(sub) for sub in pysrt.open(filename)]
+        sublist = [Sub(sub) for sub in pysrt.open(filename)]
         return(sublist)
 
     def _mark_breaks(self, subs):

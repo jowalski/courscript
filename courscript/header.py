@@ -2,7 +2,7 @@ import collections
 import reprlib
 
 
-class CourseHeaderList:
+class HeaderList:
 
     def __init__(self, filelist, base=1):
         self.base = base
@@ -20,7 +20,7 @@ class CourseHeaderList:
         headerpos = [self.get_dups(hdr) for hdr in filelist.by_units()]
 
         # create header titles
-        header_strs = [[CourseHeader(header.units[j], self.base + j)
+        header_strs = [[Header(header.units[j], self.base + j)
                         for j, hlevel in enumerate(headerpos) if i in hlevel]
                        for i, header in enumerate(filelist)]
         return header_strs
@@ -41,7 +41,7 @@ class CourseHeaderList:
         return(firsts)
 
 
-class CourseHeader:
+class Header:
 
     def __init__(self, name, level):
         self.name = name
