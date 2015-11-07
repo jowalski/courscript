@@ -2,16 +2,31 @@ import textwrap
 from courscript.timefuns import format_start_end
 import reprlib
 import sys
+import datetime
 
 
-class CoursePara:
+class Para:
 
     wrapper = textwrap.TextWrapper()
     TIME_FMT = '%H:%M:%S'
 
-    def __init__(self, sublist):
-        self.text = self._join_text(sublist)
-        self.start, self.end = sublist[0].start, sublist[-1].end
+    def __init__(self, text, start=None, end=None):
+        self.text = text
+        self.start = datetime.time(0) if start is None else start
+        self.end = datetime.time(0) if end is None else end
+
+    @classmethod
+    def subs(cls, sublist):
+        text = u' '.join(subt.text.decode('utf-8') for subt in sublist)
+        wtext = u'\n'.join(cls.wrapper.wrap(text))
+        start, end = sublist[0].start, sublist[-1].end
+        # use the text wrapper here to create nicely formatted lines
+        return cls(wtext, start, end)
+
+    @classmethod
+    def slide(cls, slide):
+        text = u'![{alt}]({path})'.format(alt=slide, path=slide.path)
+        return cls(text)
 
     def __repr__(self):
         start_end_str = format_start_end(self.start, self.end)
