@@ -20,16 +20,16 @@ class CourseFilelist:
         values = ', '.join('{!r}'.format(i) for i in self.filelist)
         return '{}({})'.format(self.__class__.__name__, values)
 
-    def by_units(self):
+    def by_names(self):
         return([unit for unit in
-                zip(*[cfile.units for cfile in self.filelist])])
+                zip(*[cfile.names for cfile in self.filelist])])
 
 
 class CourseFile:
 
     def __init__(self, path, split, sub):
         self.path = path
-        self.units = self.parse(path, split, sub)
+        self.names = self.parse(path, split, sub)
 
     def __str__(self):
         return(self.path)
@@ -39,7 +39,7 @@ class CourseFile:
 
     @classmethod
     def parse(cls, path, split, sub):
-        """Parse a path string recursively into a list of CourseUnits.
+        """Parse a path string recursively into a list of CourseNames.
         """
         head, tail = os.path.split(path)
         tail_lst = [CourseName(tail, split, sub)]

@@ -17,12 +17,12 @@ class HeaderList:
 
     def _from_filelist(self, filelist):
         # get positions of duplicated headers in hierarchy
-        headerpos = [self.get_dups(hdr) for hdr in filelist.by_units()]
+        headerpos = [self.get_dups(hdr) for hdr in filelist.by_names()]
 
         # create header titles
-        header_strs = [[Header(header.units[j], self.base + j)
+        header_strs = [[Header(name.names[j], self.base + j)
                         for j, hlevel in enumerate(headerpos) if i in hlevel]
-                       for i, header in enumerate(filelist)]
+                       for i, name in enumerate(filelist)]
         return header_strs
 
     @staticmethod
