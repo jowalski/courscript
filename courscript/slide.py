@@ -5,14 +5,15 @@ import subprocess
 import shutil
 import re
 from courscript.error import CoursError
+from courscript.folder import CourseFilelist
 
 
 class CoursePdflist:
 
-    def __init__(self, base_dir, path):
+    def __init__(self, base_dir, path, split, sub):
         self.path = path
-        self.pdflist = [CoursePdf(pdf) for pdf in
-                        glob.glob(os.path.join(base_dir, path))]
+        self.pdffiles = CourseFilelist(base_dir, path, split, sub)
+        self.pdflist = [CoursePdf(pdf) for pdf in self.pdffiles]
 
     def __getitem__(self, key):
         return self.pdflist[key]
@@ -20,18 +21,19 @@ class CoursePdflist:
 
 class CoursePdf:
 
-    def __init__(self, path):
-        self.path = path
-        self.slist = CourseSlidelist(path)
+    def __init__(self, cfile):
+        self.cfile = cfile
+        self.slist = CourseSlidelist(cfile)
 
 
 class CourseSlidelist:
     PDF_CONV_PROG = 'pdf2svg'
 
-    def __init__(self, pdfpath):
-        self.pdfpath = pdfpath
-        self.pdfdir = os.path.split(pdfpath)[0]
-        self.filename = os.path.basename(os.path.splitext(pdfpath)[0])
+    def __init__(self, cfile):
+        self.cfile = cfile
+        self.pdfpath = cfile.path
+        self.pdfdir = os.path.split(self.pdfpath)[0]
+        self.filename = os.path.basename(os.path.splitext(self.pdfpath)[0])
         self.make_slides()
 
     def __len__(self):
