@@ -1,8 +1,8 @@
 import os.path
 import reprlib
 from courscript.name import CourseName
-from courscript.error import ComparisonError
 import glob
+from functools import total_ordering
 
 
 class CourseFilelist:
@@ -14,6 +14,9 @@ class CourseFilelist:
                          for srt in
                          glob.glob(os.path.join(folder, search_path))]
         self.filelist.sort()
+        for f in self.filelist:
+            for i in range(len(f.names)):
+                print('{} is {}'.format(i, f.names[i]))
 
     def __getitem__(self, position):
         return self.filelist[position]
@@ -27,6 +30,7 @@ class CourseFilelist:
                 zip(*[cfile.names for cfile in self.filelist])])
 
 
+@total_ordering
 class CourseFile:
 
     def __init__(self, path, split, sub):
@@ -39,20 +43,12 @@ class CourseFile:
     def __repr__(self):
         return('CourseFile({})'.format(reprlib.repr(self.path)))
 
+    # FIXME: this vis-a-vis name class eq/lt/gt is a bit messy
     def __lt__(self, other):
-        if len(self.names) != len(self.names):
-            raise ComparisonError('Files are different hierarchies')
-        for i in range(len(self.names)):
-            if self.names[i] < other.names[i]:
-                return True
-            if self.names[i] > other.names[i]:
+        for i, _ in enumerate(self.names):
+            if self.names[i].num < other.names[i].num:
                 return False
-            if self.names[i] == other.names[i]:
-                continue
         self.path < other.path
-
-    def __gt__(self, other):
-        return self.__lt__(other, self)
 
     def __eq__(self, other):
         return self.path == other.path

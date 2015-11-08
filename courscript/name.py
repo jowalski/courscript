@@ -1,7 +1,9 @@
 import reprlib
 import re
+from functools import total_ordering
 
 
+@total_ordering
 class CourseName:
 
     def __init__(self, path, split, sub):
@@ -30,17 +32,16 @@ class CourseName:
         return '{}({})'.format(self.__class__.__name__,
                                reprlib.repr(self.__str__()))
 
-    # def __hash__(self):
-    #     return hash(self.path)
+    def __hash__(self):
+        return hash(self.path)
 
-    # def __eq__(self, other):
-    #     return self.path == other.path
+    # FIXME: this eq vis-a-vis lt/gt and file
+    # class functionality is a bit of a mess
+    def __eq__(self, other):
+        return self.path == other.path
 
     def __lt__(self, other):
         if hasattr(self, 'num') and hasattr(other, 'num'):
             return self.num < other.num
         else:
             return self.path < other.path
-
-    def __gt__(self, other):
-        return self.__lt__(other)
