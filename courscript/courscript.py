@@ -18,7 +18,7 @@ class Courscript:
         self.headerlist = HeaderList(self.filelist, base)
         self.ispdf = False if not pdfpath else True
         self.pdflist = None if not pdfpath else \
-            CoursePdflist(title_dir, pdfpath)
+            CoursePdflist(title_dir, pdfpath, split, sub)
 
     def print(self, file=sys.stdout, base=1):
         """Print a md file of subtitle transcripts.
