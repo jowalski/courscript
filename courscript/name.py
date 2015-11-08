@@ -30,11 +30,11 @@ class CourseName:
         return '{}({})'.format(self.__class__.__name__,
                                reprlib.repr(self.__str__()))
 
-    def __hash__(self):
-        return hash(self.path)
+    # def __hash__(self):
+    #     return hash(self.path)
 
-    def __eq__(self, other):
-        return self.path == other.path
+    # def __eq__(self, other):
+    #     return self.path == other.path
 
     def __lt__(self, other):
         if hasattr(self, 'num') and hasattr(other, 'num'):
