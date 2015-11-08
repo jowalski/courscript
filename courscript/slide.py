@@ -74,12 +74,21 @@ class CourseSlidelist:
 
 class CourseSlide:
 
-    def __init__(self, path, num, numof, pdfname):
+    def __init__(self, path, unitname, unitnum, numof):
+        print('Slide path: {}'.format(path))
         self.path = path
-        self.num = num
+        self.unitname = unitname
+        self.unitnum = unitnum
         self.numof = numof
-        self.pdfname = pdfname
+        self.num = int(re.findall('[0-9]+', path)[-1])
 
     def __str__(self):
-        return '{} Slide {} of {}'.\
-            format(self.pdfname, self.num + 1, self.numof)
+        return '{unitnum} {name} Slide {num} of {numof}'.\
+            format(unitnum=self.unitnum, name=self.unitname,
+                   num=self.num, numof=self.numof)
+
+    def __lt__(self, other):
+        return self.num < other.num
+
+    def __gt__(self, other):
+        return self.num > other.num
