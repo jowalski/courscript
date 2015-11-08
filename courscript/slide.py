@@ -43,7 +43,9 @@ class CourseSlidelist:
         return self.slist[position]
 
     def make_slides(self):
-        safe_fname = re.sub('[^A-Za-z0-9]', '', self.filename)
+        # this is a CourseName
+        cname = self.cfile.names[1]
+        safe_fname = '{}_{}'.format(cname.num, cname.name)
         self.slidefolder = os.path.join(self.pdfdir, safe_fname)
         try:
             os.mkdir(self.slidefolder)
