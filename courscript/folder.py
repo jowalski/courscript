@@ -13,6 +13,7 @@ class CourseFilelist:
         self.filelist = [CourseFile(srt, split, sub)
                          for srt in
                          glob.glob(os.path.join(folder, search_path))]
+        self.filelist.sort()
 
     def __getitem__(self, position):
         return self.filelist[position]
