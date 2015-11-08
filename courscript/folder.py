@@ -1,6 +1,7 @@
 import os.path
 import reprlib
 from courscript.name import CourseName
+from courscript.error import ComparisonError
 import glob
 
 
@@ -36,6 +37,24 @@ class CourseFile:
 
     def __repr__(self):
         return('CourseFile({})'.format(reprlib.repr(self.path)))
+
+    def __lt__(self, other):
+        if len(self.names) != len(self.names):
+            raise ComparisonError('Files are different hierarchies')
+        for i in range(len(self.names)):
+            if self.names[i] < other.names[i]:
+                return True
+            if self.names[i] > other.names[i]:
+                return False
+            if self.names[i] == other.names[i]:
+                continue
+        self.path < other.path
+
+    def __gt__(self, other):
+        return self.__lt__(other, self)
+
+    def __eq__(self, other):
+        return self.path == other.path
 
     @classmethod
     def parse(cls, path, split, sub):
