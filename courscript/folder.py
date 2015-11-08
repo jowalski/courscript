@@ -23,7 +23,7 @@ class CourseFilelist:
         return '{}({})'.format(self.__class__.__name__, values)
 
     def by_names(self):
-        return([unit for unit in
+        return([name for name in
                 zip(*[cfile.names for cfile in self.filelist])])
 
 
