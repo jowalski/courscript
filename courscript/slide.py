@@ -46,6 +46,7 @@ class CourseSlidelist:
         # this is a CourseName
         cname = self.cfile.names[1]
         safe_fname = '{}_{}'.format(cname.num, cname.name)
+        safe_fname = re.sub('[^a-zA-Z0-9]', '', safe_fname)
         self.slidefolder = os.path.join(self.pdfdir, safe_fname)
         try:
             os.mkdir(self.slidefolder)
@@ -74,7 +75,6 @@ class CourseSlidelist:
 class CourseSlide:
 
     def __init__(self, path, unitname, unitnum, numof):
-        print('Slide path: {}'.format(path))
         self.path = path
         self.unitname = unitname
         self.unitnum = unitnum
