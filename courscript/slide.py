@@ -51,21 +51,18 @@ class CourseSlidelist:
             spaths = glob.glob('{}/*.svg'.format(self.slidefolder))
             if len(spaths) == 0:
                 shutil.rmtree(self.slidefolder)
-                raise CoursError("""Folder {} exists but there
-                                    are no slides. Removed.
-                                 """
-                                 .format(self.slidefolder))
-            self.slist = [CourseSlide(path, i, len(spaths), safe_fname)
-                          for i, path in enumerate(spaths)]
+                err = 'Folder {} exists but there are no slides. Removed'
+                raise CoursError(err.format(self.slidefolder))
         else:
             spath = os.path.join(self.slidefolder,
                                  '{}_slide%d.svg'.format(safe_fname))
             print('Making slides for {}...'.format(self.filename))
-            subprocess.check_call(['pdf2svg', self.pdfpath, spath, 'all'])
+            subprocess.check_call([self.PDF_CONV_PROG, self.pdfpath,
+                                   spath, 'all'])
             spaths = glob.glob('{}/*.svg'.format(self.slidefolder))
-            l = len(spaths)
-            self.slist = [CourseSlide(path, i, l, safe_fname)
-                          for i, path in enumerate(spaths)]
+        self.slist = [CourseSlide(path, cname.name, cname.num, len(spaths))
+                      for path in spaths]
+        self.slist.sort()
 
     def delete_slides(self):
         shutil.rmtree(self.slidefolder)
