@@ -3,7 +3,6 @@ from courscript.header import HeaderList
 from courscript.sub import Sublist
 from courscript.para import Paralist
 from courscript.slide import CoursePdflist
-import os.path
 import sys
 
 
@@ -25,6 +24,10 @@ class Courscript:
         """
         if self.ispdf:
             self._print_wslides(file, base)
+        else:
+            self._print_woutslides(file, base)
+
+    def _print_woutslides(self, file=sys.stdout, base=1):
         for headers, srt_file in zip(self.headerlist, self.filelist):
             srtlst = Sublist(srt_file.path)
             paras = Paralist(srtlst, headers)
