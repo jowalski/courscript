@@ -14,9 +14,6 @@ class CourseFilelist:
                          for srt in
                          glob.glob(os.path.join(folder, search_path))]
         self.filelist.sort()
-        for f in self.filelist:
-            for i in range(len(f.names)):
-                print('{} is {}'.format(i, f.names[i]))
 
     def __getitem__(self, position):
         return self.filelist[position]
@@ -47,8 +44,8 @@ class CourseFile:
     def __lt__(self, other):
         for i, _ in enumerate(self.names):
             if self.names[i].num < other.names[i].num:
-                return False
-        self.path < other.path
+                return True
+        return False
 
     def __eq__(self, other):
         return self.path == other.path

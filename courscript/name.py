@@ -42,6 +42,6 @@ class CourseName:
 
     def __lt__(self, other):
         if hasattr(self, 'num') and hasattr(other, 'num'):
-            return self.num < other.num
-        else:
-            return self.path < other.path
+            if self.num != other.num:
+                return self.num < other.num
+        return self.path < other.path
