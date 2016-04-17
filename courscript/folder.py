@@ -45,6 +45,8 @@ class CourseFile:
         for i, _ in enumerate(self.names):
             if self.names[i].num < other.names[i].num:
                 return True
+            if self.names[i].num > other.names[i].num:
+                return False
         return False
 
     def __eq__(self, other):
