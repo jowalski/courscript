@@ -41,3 +41,7 @@ class Courscript:
             slidelist = pdf.slist
             paras = Paralist(srtlst, headers, slidelist)
             paras.print(file)
+
+# import os
+# for d, subd, files in os.walk('.'):
+#     print(files)
