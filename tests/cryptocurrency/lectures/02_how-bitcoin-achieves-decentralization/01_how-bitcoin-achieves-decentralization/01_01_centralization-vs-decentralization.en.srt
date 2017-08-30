@@ -1,0 +1,393 @@
+1
+00:00:00,340 --> 00:00:10,340
+[MUSIC]
+
+2
+00:00:16,020 --> 00:00:18,022
+Hello, and welcome to the second lecture,
+
+3
+00:00:18,022 --> 00:00:21,390
+which is going to be all about
+decentralization in Bitcoin.
+
+4
+00:00:21,390 --> 00:00:25,940
+Now, in the first lecture you saw a lot of
+the crypto basics that underlie Bitcoin
+
+5
+00:00:25,940 --> 00:00:31,040
+and we ended with a simple currency
+that we called Scrooge coin.
+
+6
+00:00:31,040 --> 00:00:34,780
+That seems to achieve a lot of what we
+want in a ledger based crypto currency,
+
+7
+00:00:34,780 --> 00:00:36,900
+except for one big glaring problem,
+
+8
+00:00:36,900 --> 00:00:40,800
+which is that it relies upon
+the centralized authority called Scrooge.
+
+9
+00:00:40,800 --> 00:00:44,610
+And we end it with the question of,
+how do we de-scroogify this currency?
+
+10
+00:00:44,610 --> 00:00:47,440
+How do we go to a decentralized
+version of this?
+
+11
+00:00:47,440 --> 00:00:49,340
+That's what we're gonna see today.
+
+12
+00:00:49,340 --> 00:00:52,300
+What I find cool about this is that
+the way in which Bitcoin achieves
+
+13
+00:00:52,300 --> 00:00:54,960
+decentralization is not
+purely technical but
+
+14
+00:00:54,960 --> 00:00:58,421
+it's a combination of technical and
+clever incentive engineering.
+
+15
+00:00:58,421 --> 00:01:02,957
+And, at the end of this lecture, you
+should have a really good appreciation for
+
+16
+00:01:02,957 --> 00:01:07,920
+how this happens asnd a lot of
+the magic or mystery of Bitcoin should
+
+17
+00:01:07,920 --> 00:01:11,850
+become clear to you and how it works and
+why it's secure, and what makes it tick.
+
+18
+00:01:13,880 --> 00:01:17,720
+So it turns out that decentralization
+is an important concept, not just for
+
+19
+00:01:17,720 --> 00:01:22,686
+Bitcoin but in fact, this notion of
+competing paradigms of centralization
+
+20
+00:01:22,686 --> 00:01:27,793
+versus decentralization plays out in a
+variety of different digital technologies.
+
+21
+00:01:27,793 --> 00:01:31,645
+To understand Bitcoin's decentralization,
+I want to start with the caveat
+
+22
+00:01:31,645 --> 00:01:35,385
+that decentralization almost
+always is not all or nothing.
+
+23
+00:01:35,385 --> 00:01:39,590
+Almost no system is purely decentralized
+or purely centralized and a good example
+
+24
+00:01:39,590 --> 00:01:43,420
+of this is email, which is a decentralized
+system, fundamentally, I would say.
+
+25
+00:01:43,420 --> 00:01:46,570
+It's based on a standard spaced protocol,
+SMTP.
+
+26
+00:01:46,570 --> 00:01:50,990
+But, what has happened,
+especially in the last decade or
+
+27
+00:01:50,990 --> 00:01:55,490
+so, is that we see a dominance of
+a few different web mail providers,
+
+28
+00:01:55,490 --> 00:01:57,830
+which are sort of centralized
+service providers.
+
+29
+00:01:57,830 --> 00:01:59,510
+And this might be a good model for
+
+30
+00:01:59,510 --> 00:02:01,649
+understanding what might
+be happening to Bitcoin.
+
+31
+00:02:03,190 --> 00:02:03,690
+So with that,
+
+32
+00:02:03,690 --> 00:02:07,780
+let's delve into some the technical
+aspects of Bitcoin's decentralization and
+
+33
+00:02:07,780 --> 00:02:11,310
+I would break this down into at
+least five different questions.
+
+34
+00:02:11,310 --> 00:02:14,460
+Questions like,
+who maintains this ledger of transactions?
+
+35
+00:02:14,460 --> 00:02:16,970
+Who has authority over which
+transactions are valid?
+
+36
+00:02:16,970 --> 00:02:18,510
+Who creates new Bitcoins?
+
+37
+00:02:18,510 --> 00:02:19,890
+And in fact, other questions like,
+
+38
+00:02:19,890 --> 00:02:22,250
+who determines how the rules
+of the system change?
+
+39
+00:02:22,250 --> 00:02:24,009
+And how do Bitcoins
+acquire exchange value?
+
+40
+00:02:25,100 --> 00:02:29,220
+So these are all components of
+decentralization of the Bitcoin protocol,
+
+41
+00:02:29,220 --> 00:02:30,170
+more or less.
+
+42
+00:02:30,170 --> 00:02:33,300
+And the first three of
+these are going to be
+
+43
+00:02:33,300 --> 00:02:35,290
+questions that we will
+consider in this lecture.
+
+44
+00:02:35,290 --> 00:02:37,820
+And when I say how is
+Bitcoin decentralized,
+
+45
+00:02:37,820 --> 00:02:41,580
+what I mean encompasses the first
+three of these meanings.
+
+46
+00:02:41,580 --> 00:02:45,290
+And I want to emphasize that there
+are aspects to decentralization
+
+47
+00:02:45,290 --> 00:02:48,730
+beyond the protocol that includes
+things like Bitcoin exchanges,
+
+48
+00:02:48,730 --> 00:02:51,420
+where you can convert Bitcoin
+into other currencies.
+
+49
+00:02:51,420 --> 00:02:53,550
+It includes things like
+wallet software and
+
+50
+00:02:53,550 --> 00:02:55,510
+a variety of other service providers and
+
+51
+00:02:55,510 --> 00:02:59,790
+so, even though the underlying protocol
+is decentralized, these services that
+
+52
+00:02:59,790 --> 00:03:03,929
+develop on top of it may be centralized or
+decentralized, to varying degrees.
+
+53
+00:03:05,370 --> 00:03:09,450
+And just to drive home this point,
+let me show you three different aspects
+
+54
+00:03:09,450 --> 00:03:13,760
+of Bitcoin and where they fall on the
+centralization, decentralization spectrum.
+
+55
+00:03:13,760 --> 00:03:17,940
+First, there's the peer to peer
+network and this aspect of Bitcoin,
+
+56
+00:03:17,940 --> 00:03:20,720
+I would say, is the closest
+thing to purely decentralized.
+
+57
+00:03:20,720 --> 00:03:21,570
+Why is that?
+
+58
+00:03:21,570 --> 00:03:25,430
+Because anybody can run a Bitcoin node,
+and there's a fairly low barrier to entry.
+
+59
+00:03:25,430 --> 00:03:28,460
+You can go online, you can download
+a Bitcoin client yourself.
+
+60
+00:03:28,460 --> 00:03:32,210
+It requires a lot of disconsumption
+on your computer, but
+
+61
+00:03:32,210 --> 00:03:35,680
+basically you can run that on your
+laptop or your PC yourself and
+
+62
+00:03:35,680 --> 00:03:38,080
+currently there are several
+thousand Bitcoin nodes.
+
+63
+00:03:38,080 --> 00:03:42,220
+And so this really resembles a peer
+to peer decentralized system.
+
+64
+00:03:42,220 --> 00:03:44,300
+But that's not the only
+component of Bitcoin.
+
+65
+00:03:44,300 --> 00:03:47,660
+There's also Bitcoin mining, which
+we'll study later in this lecture and
+
+66
+00:03:47,660 --> 00:03:51,260
+Bitcoin mining is technically
+also open to anyone.
+
+67
+00:03:51,260 --> 00:03:54,540
+But it turns out that it requires
+a very high capital cost.
+
+68
+00:03:54,540 --> 00:03:58,710
+It's a consequence of how
+the system happens to have evolved.
+
+69
+00:03:58,710 --> 00:04:02,785
+And because of this,
+there has been a high centralization or
+
+70
+00:04:02,785 --> 00:04:06,490
+a concentration of power in
+the Bitcoin mining ecosystem, and
+
+71
+00:04:06,490 --> 00:04:09,560
+the community frequently sees
+this as quite undesirable.
+
+72
+00:04:09,560 --> 00:04:15,420
+So this aspect of Bitcoin is not quite as
+decentralized as one might want it to be.
+
+73
+00:04:15,420 --> 00:04:17,980
+And, here's a third aspect,
+updates to the software.
+
+74
+00:04:17,980 --> 00:04:21,630
+And this really gets to how and
+when rules of the system change.
+
+75
+00:04:21,630 --> 00:04:25,535
+And once again here, one can conceptually
+imagine that everybody running a Bitcoin
+
+76
+00:04:25,535 --> 00:04:28,946
+node will look at the Bitcoin
+specification, and maybe even create their
+
+77
+00:04:28,946 --> 00:04:32,280
+own software and again,
+you have a purely decentralized system.
+
+78
+00:04:32,280 --> 00:04:34,670
+But of course,
+that's not how it works in practice.
+
+79
+00:04:34,670 --> 00:04:37,516
+The core developers are really
+trusted by the community,
+
+80
+00:04:37,516 --> 00:04:40,418
+and they have a lot of power when
+it comes to determining what
+
+81
+00:04:40,418 --> 00:04:43,630
+Bitcoin software each of these
+nodes will run on their computer.

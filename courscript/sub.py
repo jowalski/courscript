@@ -1,84 +1,83 @@
 import pysrt
 import itertools
-import reprlib
-from courscript.timefuns import format_start_end
-from courscript.error import CoursError
+
+from collections import UserList
+from pysrt.srtitem import SubRipItem
 
 
-class Sub:
+class Sub(SubRipItem):
 
-    def __init__(self, subripitem):
-        self.text = subripitem.text.encode('utf-8')
-        self.start = subripitem.start.to_time()
-        self.end = subripitem.end.to_time()
-        self.isbreak = False
-
-    def __repr__(self):
-        values = [reprlib.repr(self.text),
-                  format_start_end(self.start, self.end),
-                  'break' if self.isbreak else 'cont']
-        value_str = ', '.join('{}'.format(i) for i in values)
-        return '{}({})'.format(self.__class__.__name__, value_str)
-
-    def __lt__(self, other):
-        return self.end < other.start
-
-    def __gt__(self, other):
-        return self.start > other.end
-
-    def __sub__(self, other):
-        """Subs must be separate for this (and lt, eq) to be meaningful.
-        """
-        if self < other:
-            return other.start - self.end
-        elif self > other:
-            return self.start - other.end
+    def __init__(self, subitem=None):
+        if subitem is None:
+            SubRipItem.__init__(self)
         else:
-            raise CoursError('Subtracting non-separate Subs')
+            SubRipItem.__init__(self, subitem.index, subitem.start,
+                                subitem.end, subitem.text, subitem.position)
 
-    def set_break(self):
-        self.isbreak = True
+    # def __repr__(self):
+    #     # values = [reprlib.repr(self.text),
+    #     #           format_start_end(self.start, self.end),
+    #     #           'break' if self.isbreak else 'cont']
+    #     values = [reprlib.repr(self.ftext),
+    #               format_start_end(self.fstart, self.fend)]
+    #     value_str = ', '.join('{}'.format(i) for i in values)
+    #     return '{}({})'.format(self.__class__.__name__, value_str)
+
+    @property
+    def ftext(self):
+        return self.text.encode('utf-8')
+
+    @property
+    def fstart(self):
+        return self.start.to_time()
+
+    @property
+    def fend(self):
+        return self.end.to_time()
+
+    def is_break(self, other):
+        return other is None or self.end < other.start
+
+    # def is_break_of_at_least_t(self, other, t):
+    #     return self.end < other.start - t
 
 
-class Sublist:
+class SubFile:
+    """
+    SubFile(filename)
+
+    Iterable, of \"SubGroup\"s.
+
+    subgroups = list(SubFile(filename))
+    """
 
     def __init__(self, filename):
-        sublist = self.open(filename)
-        self.sublist = self._mark_breaks(sublist)
+        self.filename = filename
+        self.subiter = self._open(filename)
 
-    def __repr__(self):
-        values = ', '.join('{!r}'.format(i) for i in self.sublist)
-        return '{}({})'.format(self.__class__.__name__, values)
+    def __iter__(self):
+        return self.group_subs(self.subiter)
 
-    def __getitem__(self, position):
-        return self.sublist[position]
+    @classmethod
+    def group_subs(cls, subtitle_iter):
+        subgroup = Subgroup()
+        for sub1, sub2 in cls.pairwise(subtitle_iter):
+            subgroup.append(sub1)
+            if sub1.is_break(sub2):
+                yield subgroup
+                subgroup = Subgroup()
 
-    def open(self, filename):
-        sublist = [Sub(sub) for sub in pysrt.open(filename)]
-        return(sublist)
+    def _file_wrapper(self, filename):
+        # a missing file returns a blank Sublist rather than an error
+        try:
+            srts = pysrt.open(filename)
+        except FileNotFoundError:
+            srts = [Sub(None)]
+        return srts
 
-    def _mark_breaks(self, subs):
-        for sub1, sub2 in self.pairwise(subs):
-            # mark 'break' if second subtitle doesn't begin
-            # where the first ends
-            if sub1 < sub2:
-                sub1.set_break()
-        return(subs)
-
-    def _mark_breaks_d(self, subs, d):
-        for sub1, sub2 in self.pairwise(subs):
-            # mark 'break' if second subtitle doesn't begin
-            # where the first ends
-            if sub1 < sub2 and (sub2 - sub1) < d:
-                sub1.set_break()
-        return(subs)
-
-    def slicebreaks(self):
-        """slice by breaks
-        """
-        breaks = [i + 1 for i, subt in enumerate(self.sublist) if subt.isbreak]
-        starts, breaks = [0] + breaks, breaks + [len(self.sublist)]
-        return (slice(a, b) for a, b in zip(starts, breaks))
+    def _open(self, filename):
+        # return (Sub(sub) for sub in pysrt.open(filename))
+        return (Sub(sub) for sub in self._file_wrapper(filename))
 
     @staticmethod
     def pairwise(iterable):
@@ -88,3 +87,31 @@ class Sublist:
         a, b = itertools.tee(iterable)
         next(b, None)
         return zip(a, b)
+
+
+class Subgroup(UserList):
+    """
+    Subgroup(subtitles, start, end)
+
+    subtitles: \"Sub\"s, consecutive in time
+    start:     start time object, start of first Sub
+    end:       end time object, end of last Sub
+
+    Each subgroup is a set of subtitles, consecutive in time without breaks.
+    """
+
+    def __init__(self, subs=None, start=None, end=None):
+        UserList.__init__(self, subs or [])
+        self.start = start
+        self.end = end
+
+    def append(self, sub):
+        """
+        append(subtitle)
+
+        Append a subtitle to the list. Update start and/or end time.
+        """
+        UserList.append(self, sub.text)
+        if self.start is None:
+            self.start = sub.fstart
+        self.end = sub.fend

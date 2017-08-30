@@ -1,0 +1,1623 @@
+[
+    [
+        "introduction-to-crypto-and-cryptocurrencies",
+        [
+            [
+                "introduction-to-crypto-and-cryptocurrencies",
+                [
+                    [
+                        "welcome",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/06GcD5yzTAChnA-cs0wAEQ?expiry=1500422400000&hmac=oPL52KKYQHYa7ymekXvMT15WZPN6DKYMikw35Q68NoY&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/fYLS2zw_EeWxgwoU-Y5WvQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=f33U3VZoJCbBZt7PhOpLXv58x9OrMJBWUscUggoWO4cvdblm1tLREn80OI~hsBX3zY7FjnuekeW-tdXiASLzof-Nt7mqYWFwROQlpGGGwXPDqKvCgrs72-OZALJqgmgp4iWpg8Rtf2dRoxk1Vjb6jJ7sLntlPj7dZqzxArKyC7g_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/06GcD5yzTAChnA-cs0wAEQ?expiry=1500422400000&hmac=paa4LlrAa18ixNg7rQyt5WqCuPyzainbsqlCaZtVRPM&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "cryptographic-hash-functions",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/SnIcOX93QJiyHDl_d0CYhg?expiry=1500422400000&hmac=nDy3-mV7KFIOLaf-4C3Zmt6Ahji-iooODj8vPU2jEbc&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/iNOvcz-GEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=AXcYnCSL7JHzfdl2fJFk3JaTEUsp4LTUpzs8Ss9xUDL-Et-wpJWs--~cJf7DGM1ydbt77kC7PGpWSDVs6rJemmLUhG-i5y3-BoKwSJlWUZDbhOOXGqHKyTxhpvGRjOea4BeSycLRmzYQ1hOqbdQvAVKX3UYKVUKBIW78R1eAEMU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/SnIcOX93QJiyHDl_d0CYhg?expiry=1500422400000&hmac=64pkMDpbPC_aaCOn6r5lCj3rzwTbf-ENf1dBwy-HIbQ&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "hash-pointers-and-data-structures",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/AYBffAHWRwKAX3wB1lcCpw?expiry=1500422400000&hmac=Mizdybm1MI01EzhgWaCZEiix0Dmg69BJKJ5L64uNfUQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/GqQGPz-HEeW_MxLSMNWlQw.processed/full/540p/index.mp4?Expires=1500422400&Signature=C9xTXmfQ~xtfUEHcYecHdpw6jWSxmtlNe~BZCqXMesEI8DQK5PhP7~vkVaOL3eaD0qBvQ9CaJIzjhXchemd6t3R3~XeCySeuznRryWaiCfGHhprbrZXUc-tL14q9bfIMspu2kNHOVx0c8Qwc518p0xRDAe6su9NGDRethOjot9c_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/AYBffAHWRwKAX3wB1lcCpw?expiry=1500422400000&hmac=5K7GGJFnEn2vkPUgH1WDUZiJlalVpRjHrhA3LDi6JSA&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "digital-signatures",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/R_rY6MtUQO662OjLVIDuKw?expiry=1500422400000&hmac=RbxbhRpoPmKQSdTPmBKgxEI-0hYKKp23rR3IFSxOIYw&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/VfZVTD-HEeW_MxLSMNWlQw.processed/full/540p/index.mp4?Expires=1500422400&Signature=lGlicxEirw-IhX5o1uYFcTGQsiTaBxeerSBnZbQ21VFXj9vATwJt9-dNHokUQFegv3QwjAxI410lMh4w~kwH7b3OPq3IHKJggGnzroUB6nSriwv5ayuZNteUdIK8wPAglOiePPVCAfc~HsZdq83scq4KLzgk4HJAZl~naFk4K-Q_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/R_rY6MtUQO662OjLVIDuKw?expiry=1500422400000&hmac=bmLmT9kkYwotxDXlo-V0klSW5F0zh0tECBFquHQmRnI&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "public-keys-as-identities",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/GfjcZFUgQUW43GRVIOFFGw?expiry=1500422400000&hmac=c18QSmX_agSS_xnc_GpK2TDpBIPRGEqpjPoayFHv0IQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/fSmU4T-HEeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=HkpRHr6uuFAsU-35HrYTAtLhQyaQpbSn0ZcUOh4BHpadZdEHsm6VZzlxOX-9tYy8i6Wl68QkfdSoQs5oRKf-m40NjD8RBbluwQzczl60hO0ZzfTnrWjV-BeqtwdpYaCUas~mGGzfgF2BvsRS8kywOOqBRbAFHoAZuO7xi6mrlTQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/GfjcZFUgQUW43GRVIOFFGw?expiry=1500422400000&hmac=dX8k-4GfcvM3dJpPD6moX0MjaJmsvBWrjWi4foJ8bJ0&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "a-simple-cryptocurrency",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/WkYwP0HmS_yGMD9B5gv8bA?expiry=1500422400000&hmac=bzd4FKmVPkPKSLStAQOXbZmGPQHm4SnUWGLkAt016-4&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/uANZIj-HEeWkYw4zx_qqFQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=C8pNEReNMqWKQfWnFmc2ksTf919CYqPsf7Ed-oWlg5kgGhNqNUJWtvBtv~ydJZZTV-C~C6YZUmaa-NVPIKifxaNZa9YpBnNX4csrtT19oimMNCvWMV3hvUMSnGxZrIYpW6x367lnPzzJspRe4-XlVV4KsgRSzC-r~pnUdwE3tPI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/WkYwP0HmS_yGMD9B5gv8bA?expiry=1500422400000&hmac=-Q5tOQetRrfT42yakz5H8W5E5loKgc3D79LtNHE5yNU&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "scrooge-coin",
+                        {
+                            "html": [
+                                [
+                                    "https://docs.oracle.com/javase/7/docs/api/java/security/PublicKey.html",
+                                    "PublicKey"
+                                ],
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<co-content>\n <p>\n  In ScroogeCoin (Lecture 1), the central authority Scrooge receives transactions from users. You will implement the logic used by Scrooge to process transactions and produce the ledger. Scrooge organizes transactions into time periods or blocks. In each block, Scrooge will receive a list of transactions, validate the transactions he receives, and publish a list of validated transactions.\n </p>\n <p>\n  Note that a transaction can reference another in the same block. Also, among the transactions received by Scrooge in a single block, more than one transaction may spend the same output. This would of course be a double-spend, and hence invalid. This means that transactions can\u2019t be validated in isolation; it is a tricky problem to choose a subset of transactions that are together valid.\n </p>\n <p>\n  You will be provided with a\n  <strong>\n   Transaction\n  </strong>\n  class that represents a ScroogeCoin transaction and has inner classes\n  <strong>\n   Transaction.Output\n  </strong>\n  and\n  <strong>\n   Transaction.Input\n  </strong>\n  .\n </p>\n <p>\n  A transaction output consists of a value and a public key to which it is being paid. For the public keys, we use the built-in Java\n  <a href=\"https://docs.oracle.com/javase/7/docs/api/java/security/PublicKey.html\">\n   <strong>\n    PublicKey\n   </strong>\n  </a>\n  class.\n </p>\n <p>\n  A transaction input consists of the hash of the transaction that contains the corresponding output, the index of this output in that transaction (indices are simply integers starting from 0), and a digital signature. For the input to be valid, the signature it contains must be a valid signature over the current transaction with the public key in the spent output.\n </p>\n <p>\n  More specifically, the raw data that is signed is obtained from the\n  <strong>\n   getRawDataToSign(int index)\n  </strong>\n  method. To verify a signature, you will use the\n  <strong>\n   verifySignature()\n  </strong>\n  method included in the provided file Crypto.java:\n </p>\n <p>\n  <strong>\n   public static boolean verifySignature(PublicKey pubKey, byte[] message, byte[] signature)\n  </strong>\n </p>\n <p>\n  This method takes a public key, a message and a signature, and returns true if and only\n  <strong>\n   signature\n  </strong>\n  correctly verifies over\n  <strong>\n   message\n  </strong>\n  with the public key\n  <strong>\n   pubKey\n  </strong>\n  .\n </p>\n <p>\n  Note that you are only given code to verify signatures, and this is all that you will need for this assignment. The computation of signatures is done outside the Transaction class by an entity that knows the appropriate private keys.\n </p>\n <p>\n  A transaction consists of a list of inputs, a list of outputs and a unique ID (see the\n  <strong>\n   getRawTx()\n  </strong>\n  method). The class also contains methods to add and remove an input, add an output, compute digests to sign/hash, add a signature to an input, and compute and store the hash of the transaction once all inputs/outputs/signatures have been added.\n </p>\n <p>\n  You will also be provided with a\n  <strong>\n   UTXO\n  </strong>\n  class that represents an unspent transaction output. A\n  <strong>\n   UTXO\n  </strong>\n  contains the hash of the transaction from which it originates as well as its index within that transaction. We have included equals, hashCode, and compareTo functions in\n  <strong>\n   UTXO\n  </strong>\n  that allow the testing of equality and comparison between two\n  <strong>\n   UTXO\n  </strong>\n  s based on their indices and the contents of their\n  <strong>\n   txHash\n  </strong>\n  arrays.\n </p>\n <p>\n  Further, you will be provided with a\n  <strong>\n   UTXOPool\n  </strong>\n  class that represents the current set of outstanding\n  <strong>\n   UTXO\n  </strong>\n  s and contains a map from each\n  <strong>\n   UTXO\n  </strong>\n  to its corresponding transaction output. This class contains constructors to create a new empty\n  <strong>\n   UTXOPool\n  </strong>\n  or a copy of a given\n  <strong>\n   UTXOPool\n  </strong>\n  , and methods to add and remove\n  <strong>\n   UTXO\n  </strong>\n  s from the pool, get the output corresponding to a given\n  <strong>\n   UTXO\n  </strong>\n  , check if a\n  <strong>\n   UTXO\n  </strong>\n  is in the pool, and get a list of all\n  <strong>\n   UTXO\n  </strong>\n  s in the pool.\n </p>\n <p>\n  You will be responsible for creating a file called\n  <strong>\n   TxHandler.java\n  </strong>\n  that implements the following API:\n </p>\n <pre language=\"java\">public class TxHandler {\n\n  /** Creates a public ledger whose current UTXOPool \n    * (collection of unspent transaction outputs) is utxoPool. \n    * This should  make a defensive copy of utxoPool by using \n    * the UTXOPool (UTXOPool uPool) constructor.\n    */\n  public TxHandler(UTXOPool utxoPool);\n\n  /** Returns true if\n   * (1) all outputs claimed by tx are in the current UTXO pool\n   * (2) the signatures on each input of tx are valid\n   * (3) no UTXO is claimed multiple times by tx\n   * (4) all of tx\u2019s output values are non-negative\n   * (5) the sum of tx\u2019s input values is greater than or equal \n   * to the sum of its output values; and false otherwise.\n   */\n  public boolean isValidTx(Transaction tx);\n\n  /** Handles each epoch by receiving an unordered array of \n   * proposed transactions, checking each transaction for \n   * correctness, returning a mutually valid array of accepted \n   * transactions, and updating the current UTXO pool as \n   * appropriate.\n   */\n  public Transaction[] handleTxs(Transaction[] possibleTxs);\n\n}</pre>\n <p>\n  Your implementation of\n  <strong>\n   handleTxs()\n  </strong>\n  should return a mutually valid transaction set of maximal size (one that can\u2019t be enlarged simply by adding more transactions). It need not compute a set of maximum size (one for which there is no larger mutually valid transaction set).\n </p>\n <p>\n  Based on the transactions it has chosen to accept,\n  <strong>\n   handleTxs()\n  </strong>\n  should also update its internal\n  <strong>\n   UTXOPool\n  </strong>\n  to reflect the current set of unspent transaction outputs, so that future calls to\n  <strong>\n   handleTxs()\n  </strong>\n  and\n  <strong>\n   isValidTx()\n  </strong>\n  are able to correctly process/validate transactions that claim outputs from transactions that were accepted in a previous call to\n  <strong>\n   handleTxs()\n  </strong>\n  .\n </p>\n <p>\n  Extra Credit: Create a second file called\n  <strong>\n   MaxFeeTxHandler.java\n  </strong>\n  whose\n  <strong>\n   handleTxs()\n  </strong>\n  method finds a set of transactions with maximum total transaction fees -- i.e. maximize the sum over all transactions in the set of (sum of input values - sum of output values)).\n </p>\n <p>\n  <strong>\n   Assignment files can be found\n   <a href=\"https://www.coursera.org/learn/cryptocurrency/resources/bpKpq\">\n    here.\n   </a>\n  </strong>\n </p>\n</co-content>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "instructions"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "how-bitcoin-achieves-decentralization",
+        [
+            [
+                "how-bitcoin-achieves-decentralization",
+                [
+                    [
+                        "centralization-vs-decentralization",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/GgtCrVX-RjyLQq1V_jY80Q?expiry=1500422400000&hmac=Qem-dz3_mAEXdXtRzT0khg7tC0Y1MVpx1R_WKOJw1yQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/52l72j-IEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=k0L-T-epbmnTnw5pUqk4wbPma5uLsiGE6e-5dO-NXyM5nVBfyNTSWjaotcj9UYEcc4cqnDpgp3OGVa2Y5NO4OfF1kUbkMkNRfLy2sV0yRal8kDgIrB6RUeQkOcAlk1jeSPIWgHZ8B~yHx2GQmSJSRoxdnMnxWOj4Nht2qOX7JKQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/GgtCrVX-RjyLQq1V_jY80Q?expiry=1500422400000&hmac=Rc8B-tKYLqgxoOr2MI2Ry1wOBInKrgALGeykF7EL0nE&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "distributed-consensus",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/IRc0DIssTzyXNAyLLH88yw?expiry=1500422400000&hmac=dJ1qGZZ0cqTsg3mntV8zX-YXHOfJfEv8O8EE2vLhH_g&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/F4wtaT-JEeW_MxLSMNWlQw.processed/full/540p/index.mp4?Expires=1500422400&Signature=kORJyjkaB~W99~CyyLDNBjSbNgn6Z5A8aMNJBNkiZWLGOEwH7Zw~fjaQmZwkVn1z3ZINpC7MAaR5SucW5362HaIJhxTyvk31BoDnUnYEinbFImNQst5MDa6uSAgqmnyQ6KXP4E-k0aHMCSQtIie6PUt580ojf7xvJDhu16lfmKk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/IRc0DIssTzyXNAyLLH88yw?expiry=1500422400000&hmac=_PbrazAhaC3Zpsn7F07h90-OnlK9_PNfU5dhuDhnmLY&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "consensus-without-identity-the-block-chain",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/DHFnIyVGTyWxZyMlRk8lBA?expiry=1500422400000&hmac=XhnrOFTOuhcn93fYrtHHksWWGPT4wTMk5_qerrvyv6Q&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/ZN0dOz-JEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=fXGc4Uw2ft1DcV7TAQj7ArpD5kLDVOOxYn997jhP7y5b6pX6wA2R0nMMYIaqZ~D5NVQlNClJqIyBw5yDgeHwdV6er83pZT48miex4qEkAFtIAUKCFQyaZ-cRgAKIQBhVdGDE9ughxv~ywt0Mer2RZoF6Vyj23um77LErhMIIoq0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/DHFnIyVGTyWxZyMlRk8lBA?expiry=1500422400000&hmac=Y0bQT3rH4iCutfV1CV5S5tUW51yXMxeGncd7yOrHTnI&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "incentives-and-proof-of-work",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/A-bHRtDXRQemx0bQ1wUHdA?expiry=1500422400000&hmac=Ap2DKnAFs8lnxprFjytScDH8XhjpvBFbFLT68jyqUvY&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/0oUC_D-JEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=Pc-1ng6zEKzUjQCLsP-yD51DR-J3n7BCPsjY6ulgS2AwgQTgmESWuDc5yYIdBdMcbUxJa~rcoT-A6pg0aLnLnZG9IzAKXKwE7EbauGocBP45M~WW3fKBx5omIo5JK3nLYB3Cm97xHqLQlczQrwFeOtMoIpPKSFJSVJV2Iem66Ac_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/A-bHRtDXRQemx0bQ1wUHdA?expiry=1500422400000&hmac=TUe9BJmDQlpqL0Xqooxi9jw6MQP78dTT_uzVMAcZKOY&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "putting-it-all-together",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/P_g5bPuaRvu4OWz7mmb7Gg?expiry=1500422400000&hmac=I-JZMVc9v_3EfJ2PlgYd0OZkrtiX2Yv31mRsVmcnQIs&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/PGRvoT-KEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=k8kbBnhDCOW2S9yFnDDvUigXXtKC43wU-u56srACCmJRRfeUdqgcUVJxObJKBaWTJ44swG5PxKVxJ0ltqD2xWYUkDMStu4T555iZXWj0NJqARXqWpEWYUmY4hhelRCwsfcPcK4PdtDpWgk4kRVA3fikua2d9P7QDMLh~FKyH8FQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/P_g5bPuaRvu4OWz7mmb7Gg?expiry=1500422400000&hmac=CB1HbGViQ438bx5B6WPN_TA5CessTXmSd8X6kpD6USI&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "mechanics-of-bitcoin",
+        [
+            [
+                "mechanics-of-bitcoin",
+                [
+                    [
+                        "bitcoin-transactions",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/6Nq3qehGTWqat6noRh1qcg?expiry=1500422400000&hmac=04D7kIA9SyUPpfibsUtDGC0FOPSUCpoIo8VBMsR-IRk&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/po5TFEBOEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=JX3PyW~Tpj-jXKtUBVF4vozEeoICuHNMsv74o4pUARp9wX3-ijwL71UWrtnSomg4rbdTvXS08BGMD1YezZ2ZkcihZ31x3BgTSU2fIu4LTrLfCVfbA9P6XI0AT6cBjk64vMRjMAXI4StcVja8mbCkVHiSwUKy7UhmjsnVmhJIaTU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/6Nq3qehGTWqat6noRh1qcg?expiry=1500422400000&hmac=WI7J7LEb-RJtW1B1LhgK8Ce1MK0aMrg8lmGQbsdafeA&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "bitcoin-scripts",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/3ZIRJ8SvTTqSESfEr606ow?expiry=1500422400000&hmac=iFacIWCznOAAlZtZxN6Yldj_nIl3ep9Rr506dOxDx08&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/4I0gbj-KEeWxgwoU-Y5WvQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=PZ5QPpy7HXQGVfPc71ufHTwnaDqJ6EWSvBJ4~2kx~WN86TPJ70Od2X954m9qN6HYj4d8daRmS2qpBgObul7JrGxrIxHMGAjf6BpGdlmsD91LLDs4v52qIEc0-YIdnmV1aw8sy5Ldw7R79hC6u1CVuAnDBNbbOpDS48LSGH3KTrs_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/3ZIRJ8SvTTqSESfEr606ow?expiry=1500422400000&hmac=59Ss7ztki1FHRA7a27YL0P2Uu0GEzl3JU3XDY8NEq0U&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "applications-of-bitcoin-scripts",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/sv1PLYILT7i9Ty2CCw-4rw?expiry=1500422400000&hmac=f7XMil5HWIqm-io9m0UiWA6oc62TJwKnaOMa4-RXZi4&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/d-xuFT-NEeW_MxLSMNWlQw.processed/full/540p/index.mp4?Expires=1500422400&Signature=HH~90E8lOYxkdvGaseg3KdHUQdn2lpn6ZQKKyOnQFFtgVb-vYnRSdcDEzBlN7V46~dF1P2PEBUmcuOfjZcIuWvU16ZAnMfe6EYY8gHwXNd-twa4kMLi0LMb7jC0-Ybu4wz3HBUGDoRu-RWQpFp9n5tk-Lg23YVLIe1SlOkulxVQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/sv1PLYILT7i9Ty2CCw-4rw?expiry=1500422400000&hmac=Rw2mjbFmUaUfc7I1TjTG5G5wXhXmruBUWb-ygCajlqc&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "bitcoin-blocks",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/hof5zgw6RhOH-c4MOnYTug?expiry=1500422400000&hmac=MPOSvJOGelGYpxkCG1fTNTvmoU4vRthQjkziQvHkLXQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/4TnTvj-NEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=k16Eb9zm3pHctR6hSFz1SFvHPG-GLHLL0B-9s9cIaCmIpiJ6c~hPWNgU0Zhj8tORljRrM9TtSYwieFxqhaUgJCnLDEJtknxcu03YOBWVpLfzEGaMNDWLa-jS0G0Bi~bE-1-AlGPKGce86ZWKi~n5b9miGoQ4NFehZ0t1QHo8Z84_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/hof5zgw6RhOH-c4MOnYTug?expiry=1500422400000&hmac=Ih8E1eecT7QEAtqJb_pPj1nhi5WI5GmcEsQT2570flg&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "the-bitcoin-network",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/VAXU18_eSy6F1NfP3msufQ?expiry=1500422400000&hmac=43_U0zPy42-0uzh7PQuAyg_bwy3fRGN7q0KpbRYDUN0&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/FnXBvz-OEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=SudP7NOrh-M2qpo1hTakNrfUKxfAI-enb8AfMQjEhQ8CuLcbESQomj4aXqfFph5KfuoQqcoYrDZ1mQqBdhSbYl3DivKsINFdYxN10MGIkj2wxR01VWfl-jXR6GuGpmlXcqQP9LQZnKn~ZFf5r2HdfmH6x4krHsG~~b6y85aD5Zk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/VAXU18_eSy6F1NfP3msufQ?expiry=1500422400000&hmac=OfUNhH7Ekhrk2N-RR7-xa1ne4JvDfkLODTQour_e-wY&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "limitations-improvements",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/pDU18tQ1SGe1NfLUNehnfw?expiry=1500422400000&hmac=jHhVctaQRTKPd94unXNBzCX1QqTvSMXjWKxeKt2ezak&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/hQhV4D-OEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=a~GN9Y7ZRDHgeqTdqstf6LFH-MSNFJLQgTVtOcWGurBZwneRcPHxHPw9H1XhH~X8SnwFOTcTKyJVZKZwJjGW6oYPRjPExyzQxn0OtdOvvZ3wQA4Gk0cw69HhgRLzEZ3Yxanm55Lv9oBWuQ48XqcoCiBG2xw~ccnOvtYa-LUm5kQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/pDU18tQ1SGe1NfLUNehnfw?expiry=1500422400000&hmac=sqibM476r32KTvr9C2tPccYsP5qMItQT1JSTi4JYyio&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "how-to-store-and-use-bitcoins",
+        [
+            [
+                "how-to-store-and-use-bitcoins",
+                [
+                    [
+                        "how-to-store-and-use-bitcoins",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/RYUjii01RTOFI4otNfUzYQ?expiry=1500422400000&hmac=29OZuNszb76SEUkKZJHWwHTAfbSFVyGkUtGdpXt25tQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/HOEEsT-PEeW_MxLSMNWlQw.processed/full/540p/index.mp4?Expires=1500422400&Signature=NVIswnAvqybo3u06FrSF7he50ZZ0SwKfLq6uMaXZBK4XLhUAFQiAuGSQIweGVG61D-qJcmQGvqiW83Yn6kTGPLz7PXAlAg6~DJiKcxWNlU61w1eQO3~radE0yDUJR-qOJaJcgZb~H1oPOPGaLf0je3L5vqo2Aygws~qfqyylRZM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/RYUjii01RTOFI4otNfUzYQ?expiry=1500422400000&hmac=IvqtzyzkDUcH7iGgM75tqq1-NAWkim9LYksDQ9qKQjA&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "hot-and-cold-storage",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/aLihMY2SRCa4oTGNkpQmuQ?expiry=1500422400000&hmac=8bUzwsacVNV3DayOrh2sEYR4fD0ox2dmeXlw71DTQI8&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/vP6zgT-PEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=bSVw6bXrSsqtWYWHap-WSrKWjA70wW7PHSoJJdLp~RFXcxKvWcDffEopnpRvqsCChTOK2F1jzQ4zzt5u6QieSomc4a1dudhdIO3WZTsmpHIaw3CN8LRm02hkA8SAXrIPXzDC2C2ieJeAw9H8u4-Ka3AUmPMS7VEs0ZB0em~MhbM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/aLihMY2SRCa4oTGNkpQmuQ?expiry=1500422400000&hmac=BFNX07_8HWViWm6Fr18p7ZaiWIVmnW5doZTc0U4f8zw&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "splitting-and-sharing-keys",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/BP0G_eqmSd29Bv3qpnndXw?expiry=1500422400000&hmac=8psqGNhOCamvarA4rxzJPOAXTeyPb_6EJNt832YQjmg&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/ITGSwj-SEeW_MxLSMNWlQw.processed/full/540p/index.mp4?Expires=1500422400&Signature=csPexmSclYop0Fys90jZsxt-BZ2rY3SCaLDTIjoxfHnMYLo0NVqwAnBU6~VdknD1VIddD4zmAwC8JESh-uQCV0onYRnPE~PDJsP03y5eWpcFTGeN25-HCSCrXHkLqpy~om-Eb--Y2eU2FFE8707U4dJgYP4aOdrp205AMFlNdOI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/BP0G_eqmSd29Bv3qpnndXw?expiry=1500422400000&hmac=sBFNJ---qL7VOTcjXI50Ite31eelXGGAT6Oc4w0bj7k&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "online-wallets-and-exchanges",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/5KkIfimkR9-pCH4ppPffOw?expiry=1500422400000&hmac=JE2kFMqgz82ZIlXHYOCcfdHldecdyqOSpa3_wdvRALc&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/uyrMKz-REeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=Nc2gurUXJIx6PB1EDtJUwjce~dvRur2rH8Y69M-jA1~d5kL6vclx51g5M0gfowTfOyRxWQQ675mHqa4WinDtEoB~HZ~EiglTaJ1OcPJYPDmov-zktpgSxx5iZ2~YoApn-4y9enIVGyidoXWCqzlqYKNDezxeFxhs302R6MpCvrw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/5KkIfimkR9-pCH4ppPffOw?expiry=1500422400000&hmac=JPzy7JnRFR5TzpnUCEamu35kFFThJIGRGn6kYVRCE0c&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "payment-services",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/_DyUQc3KRvy8lEHNylb81Q?expiry=1500422400000&hmac=D0cv1lLF_GWmAWOF4sYQ7Q5aRlij397SJp7p5tkDtGg&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/U2QGgj-REeWkYw4zx_qqFQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=gKouQiS5bn7d8g71OrL7bx1iMcIGS47iW7dnGgjhMGrBKo7aXG3lhjxPe6l1bTdsS8sshm-kBnVWiGrv0ZlsjLz4eIAffKMdbHWAVpEU8wI9b2H9jKezImLz~lWzzV1XBt5wLSi9~nVM1vJBItUNEmMGkgNR7sbdsoimxGEDvU4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/_DyUQc3KRvy8lEHNylb81Q?expiry=1500422400000&hmac=KHYDQBwHV5hY1kaxwAjD7tHq5_QLcGkJT12HN1oP7tQ&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "transaction-fees",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/YlIQ6TpSQ2mSEOk6UnNpuQ?expiry=1500422400000&hmac=lhs5ljKZolvEKmntJvhNxRMo3z9FT1eSHfW7b-U3vo0&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/YIVGBz-SEeWxgwoU-Y5WvQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=Sh4QXr~uCm8CZxgWo~Ui~llB88yIgnq-F-XtxVlsJplxy2lXjZYydFdLnpFA4TYLuQP06VoXWxA~EPuQTqrnNBQLvK1DWh3z-dPqGmbdEmaPWReD~bhjFHG~EkvbPeavkB-iDIdBp7yeS1eAkGpYYHscu27U04YMqVsh~dm51sw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/YlIQ6TpSQ2mSEOk6UnNpuQ?expiry=1500422400000&hmac=ZwgbBp4bO3IanSUGJvylfVYoUHD76pKMuJYcYTyk4UM&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "currency-exchange-markets",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/QFRdWah2Q0GUXVmodnNBgg?expiry=1500422400000&hmac=vaM0EIXqKCCqiri3zOtU5YXMTiPjUeGdT0_X6r2GNQM&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/FUstCUKFEeWTRg7GRSXaTQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=hXS1Sw2FsfeZlyA1jg31CrN~va~ol4TrpOKMwJzbaaMclK2EqfY0ZJevka790C0kYZnVLfZw1f2nFMx2yWaJsYKQk7SBHggru1vQKtKh2xP4KGmuugYSPDQIWe2yfvDIWh1NZR4ZMQjW~LHT3GlUzro64stV-wGvq6VZ65S6rWc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/QFRdWah2Q0GUXVmodnNBgg?expiry=1500422400000&hmac=PNMpF3kMgK4_kkMZMHMVRO8nsPHB34ZJh1duEAevE98&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "consensus-from-trust",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<co-content>\n <p>\n  For this assignment, you will design and implement a distributed consensus algorithm given a graph of \u201ctrust\u201d relationships between nodes. This is an alternative method of resisting sybil attacks and achieving consensus; it has the benefit of not \u201cwasting\u201d electricity like proof-of-work does.\n </p>\n <p>\n  Nodes in the network are either compliant or malicious. You will write a\n  <strong>\n   CompliantNode\n  </strong>\n  class (which implements a provided Node interface) that defines the behavior of each of the compliant nodes. The network is a directed random graph, where each edge represents a trust relationship. For example, if there is an  A \u2192 B edge, it means that Node B listens to transactions broadcast by node A. We say that B is A\u2019s follower and A is B\u2019s followee.\n </p>\n <p>\n  The provided Node class has the following API:\n </p>\n <pre language=\"java\">public interface Node {\n\n// NOTE: Node is an interface and does not have a constructor.\n// However, your CompliantNode.java class requires a 4 argument\n// constructor as defined in the provided CompliantNode.java.\n// This constructor gives your node information about the \n// simulation including the number of rounds it will run for.\n\n/** {@code followees[i]} is true if this node follows node\n  *{@code i} \n  */\n  void setFollowees(boolean[] followees);\n\n  /** initialize proposal list of transactions */\n  void setPendingTransaction(Set&lt;Transaction&gt; pendingTransactions);\n\n  /**\n  * @return proposals to send to my followers. REMEMBER: After \n  * final round, behavior of {@code getProposals} changes and \n  * it should return the transactions upon which consensus has \n  * been reached.\n  */\n  Set&lt;Transaction&gt; sendToFollowers();\n\n  /** receive candidates from other nodes. */\n  void receiveFromFollowees(Set&lt;Candidate&gt; candidates);\n}</pre>\n <p>\n  Each node should succeed in achieving consensus with a network in which its peers are other nodes running the same code. Your algorithm should be designed such that a network of nodes receiving different sets of transactions can agree on a set to be accepted. We will be providing a Simulation class that generates a random trust graph. There will be a set number of rounds where during each round, your nodes will broadcast their proposal to their followers and at the end of the round, should have reached a consensus on what transactions should be agreed upon.\n </p>\n <p>\n  Each node will be given its list of followees via a boolean array whose indices correspond to nodes in the graph. A \u2018true\u2019 at index i indicates that node i is a followee, \u2018false\u2019 otherwise. That node will also be given a list of transactions (its proposal list) that it can broadcast to its followers. Generating the initial transactions/proposal list will not be your responsibility. Assume that all transactions are valid and that invalid transactions cannot be created.\n </p>\n <p>\n  In testing, the nodes running your code may encounter a number (up to 45%) of malicious nodes that do not cooperate with your consensus algorithm. Nodes of your design should be able to withstand as many malicious nodes as possible and still achieve consensus. Malicious nodes may have arbitrary behavior. For instance, among other things, a malicious node might:\n </p>\n <ul bullettype=\"bullets\">\n  <li>\n   <p>\n    be functionally dead and never actually broadcast any transactions.\n   </p>\n  </li>\n  <li>\n   <p>\n    constantly broadcasts its own set of transactions and never accept transactions given to it.\n   </p>\n  </li>\n  <li>\n   <p>\n    change behavior between rounds to avoid detection.\n   </p>\n  </li>\n </ul>\n <p>\n  You will be provided the following files:\n </p>\n <table columns=\"2\" rows=\"6\">\n  <tr>\n   <td>\n    <p>\n     <strong>\n      Node.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     a basic interface for your\n     <strong>\n      CompliantNode\n     </strong>\n     class\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      CompliantNode.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     A class skeleton for your\n     <strong>\n      CompliantNode\n     </strong>\n     class. You should develop your code based off of the template this file provides.\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      Candidate.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     a simple class to describe candidate transactions your node recieves\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      MaliciousNode.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     a very simple example of a malicious node\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      Simulation.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     a basic graph generator that you may use to run your own simulations with varying graph parameters (described below) and test your\n     <strong>\n      CompliantNode\n     </strong>\n     class\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      Transaction.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     the\n     <strong>\n      Transaction\n     </strong>\n     class, a transaction being merely a wrapper around a unique identifier (i.e., the validity and semantics of transactions are irrelevant to this assignment)\n    </p>\n   </td>\n  </tr>\n </table>\n <p>\n  The graph of nodes will have the following parameters:\n </p>\n <ul bullettype=\"bullets\">\n  <li>\n   <p>\n    the pairwise connectivity probability of the random graph: e.g. {.1, .2, .3}\n   </p>\n  </li>\n  <li>\n   <p>\n    the probability that a node will be set to be malicious: e.g {.15, .30, .45}\n   </p>\n  </li>\n  <li>\n   <p>\n    the probability that each of the initial valid transactions will be communicated: e.g. {.01, .05, .10}\n   </p>\n  </li>\n  <li>\n   <p>\n    the number of rounds in the simulation e.g. {10, 20}\n   </p>\n  </li>\n </ul>\n <p>\n  Your focus will be on developing a robust CompliantNode class that will work in all combinations of the graph parameters. At the end of each round, your node will see the list of transactions that were broadcast to it.\n </p>\n <p>\n  Each test is measured based on\n </p>\n <ul bullettype=\"bullets\">\n  <li>\n   <p>\n    How large a set of nodes have reached consensus. A set of nodes only counts as having reached consensus if they all output the same list of transactions.\n   </p>\n  </li>\n  <li>\n   <p>\n    The size of the set that consensus is reached on. You should strive to make the consensus set of transactions as large as possible.\n   </p>\n  </li>\n  <li>\n   <p>\n    Execution time, which should be within reason (if your code takes too long, the grading script will time out and you will be able to resubmit your code).\n   </p>\n  </li>\n </ul>\n <p>\n  Some Hints:\n </p>\n <ul bullettype=\"bullets\">\n  <li>\n   <p>\n    Your node will not know the network topology and should do its best to work in the general case. That said, be aware of how different topology might impact how you want to include transactions in your picture of consensus.\n   </p>\n  </li>\n  <li>\n   <p>\n    Your CompliantNode code can assume that all Transactions it sees are valid -- the simulation code will only send you valid transactions (both initially and between rounds) and only the simulation code has the ability to create valid transactions.\n   </p>\n  </li>\n  <li>\n   <p>\n    Ignore pathological cases that occur with extremely low probability, for example where a compliant node happens to pair with only malicious nodes. We will make sure that the actual tests cases do not have such scenarios.\n   </p>\n  </li>\n </ul>\n <p>\n  <strong>\n   <u>\n    Assignment files can be found\n    <a href=\"https://www.coursera.org/learn/cryptocurrency/resources/aGWMT\">\n     here\n    </a>\n    .\n   </u>\n  </strong>\n </p>\n</co-content>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "instructions"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "bitcoin-mining",
+        [
+            [
+                "bitcoin-mining",
+                [
+                    [
+                        "the-task-of-bitcoin-miners",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/j3EvXYvcRoixL12L3DaIAA?expiry=1500422400000&hmac=kdr4wzqE4SPUwMtQVV3KhFsAihzppwmChAl_I7tP3Vw&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/P3OgTj-UEeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=DV5kdK9Sa1tMFwOjvJkf96FLrOu7DLdxjBP698-fUhaW-M~NBlR0wFkna3ih3~XRu0Vle0e3Lt2evPVvhdjOXZu11ZXEjf2niBBCI9EeZm~ZXh-w4tBtPn6MWtpJX3dkZamtziIlRcq5pWYiZXCZc3n~2gNMIzCYHHi9I~A8T1U_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/j3EvXYvcRoixL12L3DaIAA?expiry=1500422400000&hmac=0-ZbOy8G9fA3I1uIGnmOpPCMj9It5bJWDxguWRKwb_w&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "mining-hardware",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/3W0KSH0nSbGtCkh9J_mx-A?expiry=1500422400000&hmac=Newfj9sSQG8z4WclvRXX9tubd05vY5gRKF0mn860OVI&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/gmRP_j-UEeWxgwoU-Y5WvQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=dXDPtGbglud6bah8ln-we47xiuYEeUIUmCUBZge47f0SlI99DV-rygb41Oae-has0OSNSWutsRTM91XFfC1ditpLFjfAo4AMVPgviOOvAESzrnmN6NxUEkw3Ek9uhHaDJUuV7DrJ21-FYC3dEmCrz4BWyP1NTcUdO1gHieAJoyk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/3W0KSH0nSbGtCkh9J_mx-A?expiry=1500422400000&hmac=CwTV304xN1Y_Nf-ObJsP7ICZY-mjT47sDJmBYOCRQo0&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "energy-consumption-ecology",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/q4SwboBnS1WEsG6AZ6tVvQ?expiry=1500422400000&hmac=zfIVxK-7CpT5gHj1jVleUTj8y86mXDme1iM3HJVzVXg&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/ceRgkEBYEeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=fguTnp9nJfOYL-MyuCJ5PE0Au4rZZGg3j2Q9pq1zwryQ3CUEkwtLi2aXgevhtx~8aZ5WnXjmZj~HGaskY8kgMJSonZ6Vwi-ZPHd5sPmLId5AXetD5F3IzwnUnb~veswilTQOfXz8jOZlNLQTZzRxaN~tX2UpQl9nfXwLDla23kw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/q4SwboBnS1WEsG6AZ6tVvQ?expiry=1500422400000&hmac=FlIabEWrWLSnAkEuGe_5FuM5OOY_KGowQHpQTrGK7hI&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "mining-pools",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/cvF7IXyjS_6xeyF8oxv-DQ?expiry=1500422400000&hmac=h-UXtos1kEn3Q44ys4am-1plgbuamkObjhb3Qo_xTSQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/uMAGoT-UEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=EVq1ysw7N64WlxPLXalqDnOYF8H1gnBgcO9qf3fETOIZOqTs95o-8MILFXDZ-chdlWmZr9xV9bm-huf7AUwSuF6xPmhe5bxYlpSkycml0Ce7rc2VW1DGTJjGl3a7xY9ZFVxfQSSzjEVWU546XJO1RgR9rrmb3HoC937-4oDiMtA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/cvF7IXyjS_6xeyF8oxv-DQ?expiry=1500422400000&hmac=AUmvGAqzq_43QjQHGi6AYU9B0yGQO_utHw6zDX_2cCU&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "mining-incentives-and-strategies",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/MISq9qaETGyEqvamhExsYg?expiry=1500422400000&hmac=u5pVBAU7oXMSrbYpE93KlBzX23StOD1mNZKWZJKLWPs&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/5OMoRT-UEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=Ekw4iuf-8YpPbn0QploxRdCeCBNSoyFl4mytgeNGynzeCAEZI2st9WDrKuvlHwyTyipFxnCqnmJMy6q76x~iw7Gu7kswyBC8S2N3UGkc14xy6RXV2VPQV9DmyC5luY6hNwvFqBWj8xaWTP8NNfP0ljHix-v0arZBXz5zioLtmrA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/MISq9qaETGyEqvamhExsYg?expiry=1500422400000&hmac=PppWkHsF_CZzYEOMly8djQs2os1vX7gyX5RdRpdefcw&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "bitcoin-and-anonymity",
+        [
+            [
+                "bitcoin-and-anonymity",
+                [
+                    [
+                        "anonymity-basics",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/WVUyIxLAT_KVMiMSwF_ygg?expiry=1500422400000&hmac=AUwAOi_GoHDclRcyqaGHw144lT4RLzD0CyVRZ5qX-TY&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/Y3Q8lkA-EeWkYw4zx_qqFQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=eBXYIeM2lAEkP470RYLG3cGx0AMJlLT5755Ou3x-vvSatD0jDnzB9GJ5p0hgRXXfzKs9f8uCyu4ptdhNfd-pYgB-Tvj1W0AIC0wWzyA2RZaM5faHAttOh8I0UjvJgml2gAKxKn40nfLKTa38gXLoGMRYF2aJcqTlRhwsgqs3dsM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/WVUyIxLAT_KVMiMSwF_ygg?expiry=1500422400000&hmac=TvpRUm-YckIsOZd01wp8KbHiaJjJsG5SyTAYyJYHWvc&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "how-to-de-anonymize-bitcoin",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/3mIeg7qeRoqiHoO6nhaKrg?expiry=1500422400000&hmac=HNaY0nRZhGNf7IPTQyab9JwB_nwzr6sjRaDX2S8RXCk&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/iLGgf0BYEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=T8ifgIblcM-mGOQ5DMzkhwp3VVk3NDjyv6wKchGvigqr7LvG1Uq2ZLIpGZHNonPKPIDX3cmjbHlIauZwyFiqGFROzft5pVH9XdgGf7hyJI6pryd1Nt5IZ3GXBiPuhnYsnVfX9dRVL9jiacsZBNz78ZkToWiFB0ETd6o9uOfKZUg_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/3mIeg7qeRoqiHoO6nhaKrg?expiry=1500422400000&hmac=iQWFHQUitSl0agcwLPcIOTIdI2v2rGIqbUEnt7-zhiY&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "mixing",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/s8ZBrpVPSTmGQa6VT-k5LQ?expiry=1500422400000&hmac=R6rL2O2C9E3Ry4dyhVoho2itQPrEwTAXT4dK6o9rZMc&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/2Gw8Z0A-EeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=Z8t1PwqqlwB4iGyixMY9NZrRhdYDil--TKwn6oM0hb8bXzS4RWrb0G5ruGlik4iMoZ2MHIYP2-ZT79OAUY0STyJA5b88FNdhphZ3K2BTqlX7BBjXJkQTEu8ThdIARcWN1U1x8ff7efmUj19aTIYEzNj2jQdXLItspS2gJy5fhGk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/s8ZBrpVPSTmGQa6VT-k5LQ?expiry=1500422400000&hmac=TeZb66bILGuV2-bp66iyfr2jlSPjtMeA27ZNlucx1uo&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "decentralized-mixing",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/dQTPwstgSQGEz8LLYGkBzA?expiry=1500422400000&hmac=dVkzExnrYJy4JfWmEjQoWifNTYZlQFjeCuZKwhKwHBQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/7CsqmEA-EeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=U0NAKVXgsdVFw5q5xmByD3e07mzEf7WupPQp2gF5r1dgbYI~HNzDnm~kEy87wLxRPPig6fda-mrhjn8N3~nUKDZNh5SGce-wR9gcJvYQGYfpzeupBfHyy9Y3eBACqw8duPrh77a2-ZxAr-TrAYvxXP8wMfnnCIn4OY3KU5DeXdk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/dQTPwstgSQGEz8LLYGkBzA?expiry=1500422400000&hmac=SmAA3yJtPNOohKvNxUq-amaRer1xFKHs14ancNPDovM&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "zerocoin-and-zerocash",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/esezxKtRRNqHs8SrUTTa_Q?expiry=1500422400000&hmac=N1J4W95pawNwn0I3G3vi0M1w_Rpu_1-4PH58SrOgwhk&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/yl1FDEBBEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=KNTojsYbTb0QWcrSAXvzmHKJsrvs5DDx8pdIPA0reYY~3QFubDUhnf8LPIzzZDZ80L8lrdZiBde3mvOD6P6aVzteMYdpaGQ7Ur0bX9NY-MaN9YQDgNX6x2nry15qKa7CqyLdcyf8GprgTXhcD5qKDFigifw7e2y6WM6zPRAHnzo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/esezxKtRRNqHs8SrUTTa_Q?expiry=1500422400000&hmac=hlDWNllnqiam9RTp6luFCkHwmVruTLwicFkGKEBSmvA&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "tor-and-the-silk-road",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/lZ5VSVT-SVueVUlU_plblg?expiry=1500422400000&hmac=DM_ajCuw8mVMjsD07P-bU3BTk1C316hnCiVLqVta1UI&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/hBjxy0BAEeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=Z79ls5JZ~1Tvsd6QxR0SJXEYZSNmLZYtMmREpGPa6XWSor-4C27oa-LCb75LCEmoqGXUeTuMswCeSqU9rwpNh2442Z-HqGZBFli-FrV4ldEF7Sp3BwkAAd9ketM3-MS1jxudK8o07QZQwNOzFq0y6G6KOcqV5xMFh4M~694vYOM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/lZ5VSVT-SVueVUlU_plblg?expiry=1500422400000&hmac=2dwEJxLVPwZ-OLVGy6r7A-P0_506Imxlc5xfCeVpUZk&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "community-politics-and-regulation",
+        [
+            [
+                "community-politics-and-regulation",
+                [
+                    [
+                        "consensus-in-bitcoin",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Qttzzn83RHqbc85_N5R6Xw?expiry=1500422400000&hmac=clS99FGzHDyYtvDUpUjkPUyI7IsDXZw3OxSEy_LCYSQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/wFBGt0A8EeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=Qk6EX9I886UWTgnnFS8jgoommULBABdHeaBrNPWgcxjn~3i0G6eXw2Er2BH1Q5rLtQlo0~AZpLNAasmtHgx8U~U1Kx9cA9WAjHfagWHGUvhKmKrpK2aDi83SqPNbvqF4o37UKXyw1ZAl3j1Kb3~JUsI4UFPLQmOkZaECu8CBwuw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Qttzzn83RHqbc85_N5R6Xw?expiry=1500422400000&hmac=FmeCj1m_UkDb_dY_KNfreUO1G-jt7fFNLBBGzgMvV-Y&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "bitcoin-core-software",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/XmviL966TEyr4i_eurxMog?expiry=1500422400000&hmac=XOxU2C7itGaUWPc-dudSIbTtd7fV2Sjhyp7FPKg1waQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/0zzUmUA9EeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=OiAgQC5DgnCWgJ8hgwrQaBKyfJtE3XPxkr2jJs8i0hS9sQcjvhoWG53WB8YmkTIVC1BArGQC5bF1KwCuuBkPglHOUYfgvPh8DLJKAu6fU85-2PHZphCLCGGwjjXkJyN6RtAHAXTEoYK7TcgzoPy4YBpSxG6qPTAwdLSTQxeZ~qE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/XmviL966TEyr4i_eurxMog?expiry=1500422400000&hmac=2zJynLNnDUfViPxG1Lx-Ygx5BWxgVDql-avq3ke_04Y&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "stakeholders-whos-in-charge",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/JI0W0T9ETzmNFtE_RM85HA?expiry=1500422400000&hmac=lO4AlvEPLzKnJq12dN0y2PB9338MzJSExcDZj1StbaM&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/OyEJvUBFEeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=B8pErb0xd8UO2mv5PcaSrQueEwJQqLnuF-RRsyUJx2AgUoemDqOhkw-tixMgUSEEeVtbRAg3qCPokXuVpaTz9VufbrVsxhbTpNqlslHnUr4lla9AcHR2gJAWL7jHQrbUGv-c8AjpG9mCMfrUWeJrsv8KyoYZLhdE8r-nnIC3SFE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/JI0W0T9ETzmNFtE_RM85HA?expiry=1500422400000&hmac=g971usLza45miOey478dzo1yUNArld80WqdQwORQRCI&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "roots-of-bitcoin",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Ywts_9SeQ2CLbP_UngNgoQ?expiry=1500422400000&hmac=Cs7JC-Ga5N2AhsnqTIkPS2vwyGJ3IXHz0qyW66YAaSY&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/luKZU0BCEeWxgwoU-Y5WvQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=Bct7pGKsfwljwckSmAo2qviY03HU1lURjxOyZ-~wBCs5L6fM8NQgqbq2kKy1VL2zDz581nxZQUn7NQDwDdqy9-gjKSxAoaG5qjBnP5Rf7G3xwDj9BVica2BemSlEjGfgoTcenKjQj69b3oTj0yL82ow-ZwGDCMp9zdyzV3Bd1ig_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Ywts_9SeQ2CLbP_UngNgoQ?expiry=1500422400000&hmac=3RqBggn6-W_0QoYWBCodUQuQato6FzBUE2RfzRCBwY8&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "governments-notice-bitcoin",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/5hRcfuxdTTeUXH7sXd03Rg?expiry=1500422400000&hmac=86hQ2hDzoBcAvqi2zH1PRLyz5NycWbgQGj_4jp9sDW0&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/XjQAqkBHEeWkYw4zx_qqFQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=SedrcFJdX4HZDsTVUnocc8RKqUV6yuqqMJvPVG21HBmIuUaWBUVkirYDWT3GrFWz0AE6Tu-FVSMGWPe7FOlvXeUmxszmI~G-r-kSgzXZnv3fVLl64Wox4KNWnYzvhkfwIoPMRc2UOSiUg1qMmhBPxCvr9g3r9q7WPEtcSwJ92JQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/5hRcfuxdTTeUXH7sXd03Rg?expiry=1500422400000&hmac=IBhWNn3gDy9ymaxIyT552N7KZfEoX4m5g2Nen6zsJfo&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "anti-money-laundering",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/qV1tU_FuTtqdbVPxbn7aeA?expiry=1500422400000&hmac=BzLaUuBSLEMqLkMjC7NY_bKhJfufFUX0P62lsYEzdz8&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/RCQRh48NEea7Xg7ev7rZkQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=fRf1foOGQiJHXqvq-JC-rBWYmtLiAmX4aNPz8nwi8LeiA~iQr4b30JHwGueTsQ6Q7OsNKQjXdn8MNTXfJQdx2-idIZkXj12qa2YrXUQOKMaDUwud9FFKSwTAD6xOKSzSapScxqhGeHBt4WQRE6bYhLwWUO1LtinT58ZXxJmTyug_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/qV1tU_FuTtqdbVPxbn7aeA?expiry=1500422400000&hmac=sUyvad89YWxZCzFCavrD68Yr0rtYxCEZh-wpal7ZzgU&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "regulation",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/N1RRQeqESVOUUUHqhFlTxQ?expiry=1500422400000&hmac=F-FpJs22YCoyUvQR6s0Zmhc41FqVYbCYpSogSXSm__8&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/RCOcPY8NEeaapgob0rvkxw.processed/full/540p/index.mp4?Expires=1500422400&Signature=EejCc8-onFjKyt3VGsYvuEsM0ryvj5BwMdHei1h8JGy5GfogjODWgFI8fjKkvn7jqvLDuxk7nuHXG1KrM56Ttjb6QWxhLyXXyEeeaocK-VX8NfaTSiMoOwlL5FSD7jHPkICCN7kRYNik0vpD846oxrYs2J2iP-m~wuu4yLlNSS4_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/N1RRQeqESVOUUUHqhFlTxQ?expiry=1500422400000&hmac=-rw8F5QN1yQj1VOz5gwnZhOF45ZQRumtileN95ejF0E&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "new-yorks-bitlicense-proposal",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/D3QeJESSRXW0HiREkoV13w?expiry=1500422400000&hmac=8VLcKaLYVAWOERm4SHjCVS2k1VCHvBepNmQkYlJCzUg&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/YA9IwI8NEeaKKBK9HFzH_Q.processed/full/540p/index.mp4?Expires=1500422400&Signature=ICDm6StHq4GZkSzD-QNF1zBs128BnlRPWf91bZIFhWnAM9AYSyFeGqEEpI6ma6KK~0sMF6fEhKyjj9N9zofLFJM93tcZqK-tBWm-JsaWFqVRxthaqVp0HOuYoGPQoab1EWeKKSSQnufMPX4L8r4GgVPG85a3-0f2RVcBP-hlVTw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/D3QeJESSRXW0HiREkoV13w?expiry=1500422400000&hmac=pv0VXz9UMDxtv_vzy12WFnOaH9zixdKOBSl8z6vtEfs&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "blockchain",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<co-content>\n <p>\n  In this assignment you will implement a node that\u2019s part of a block-chain-based distributed consensus protocol. Specifically, your code will receive incoming transactions and blocks and maintain an updated block chain.\n </p>\n <p>\n  <strong>\n   Files provided:\n  </strong>\n </p>\n <table columns=\"2\" rows=\"7\">\n  <tr>\n   <td>\n    <p>\n     <strong>\n      Block.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     Stores the block data structure.\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      BlockHandler.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     Uses\n     <strong>\n      BlockChain.java\n     </strong>\n     to process a newly received block, create a new block, or process a newly received transaction.\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      ByteArrayWrapper.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     A utility file which creates a wrapper for byte arrays such that it could be used as a key in hash functions. (See\n     <strong>\n      TransactionPool.java\n     </strong>\n     )\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      Transaction.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     This is similar to\n     <strong>\n      Transaction.java\n     </strong>\n     as provided in Assignment 1 except for introducing functionality to create a coinbase transaction. Take a look at\n     <strong>\n      Block.java\n     </strong>\n     constructor to see how a coinbase transaction is created.\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      TransactionPool.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     Implements a pool of transactions, required when creating a new block.\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      UTXO.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     From Assignment 1.\n    </p>\n   </td>\n  </tr>\n  <tr>\n   <td>\n    <p>\n     <strong>\n      UTXOPool.java\n     </strong>\n    </p>\n   </td>\n   <td>\n    <p>\n     From Assignment 1.\n    </p>\n   </td>\n  </tr>\n </table>\n <p>\n  <strong>\n   Files to be used from Assignment 1:\n  </strong>\n </p>\n <p>\n  <strong>\n   TxHandler.java:\n  </strong>\n </p>\n <pre language=\"java\">public class TxHandler {\n\n  /** Creates a public ledger whose current UTXOPool \n    * (collection of unspent transaction outputs) is utxoPool. \n    * This should make a defensive copy of utxoPool by using \n    * the UTXOPool(UTXOPool uPool) constructor.\n    */\n  public TxHandler(UTXOPool utxoPool);\n\n  /** Returns true if\n    * (1) all outputs claimed by tx are in the current UTXO \n    * pool,\n    * (2) the signatures on each input of tx are valid,\n    * (3) no UTXO is claimed multiple times by tx,\n    * (4) all of tx's output values are non-negative, and\n    * (5) the sum of tx's input values is greater than or equal\n    * to the sum of its output values; and false otherwise.\n    */\n  public boolean isValidTx(Transaction tx);\n\n  /** Handles each epoch by receiving an unordered array of \n    * proposed transactions, checking each transaction for \n    * correctness, returning a mutually valid array of accepted\n    * transactions, and updating the current UTXO pool as \n    * appropriate.\n    */\n  public Transaction[] handleTxs(Transaction[] possibleTxs);\n\n}</pre>\n <p>\n  Create a public function\n  <strong>\n   getUTXOPool()\n  </strong>\n  in the\n  <strong>\n   TxHandler.java\n  </strong>\n  file you have created for assignment 1 and copy the file to your code for assignment 3.\n </p>\n <p>\n  When grading  your code, we will run it with our reference\n  <strong>\n   TxHandler.java\n  </strong>\n  .\n </p>\n <p>\n  <strong>\n   File to be modified:\n  </strong>\n </p>\n <p>\n  <strong>\n   BlockChain.java\n  </strong>\n </p>\n <pre language=\"java\">// Block Chain should maintain only limited block nodes to \n// satisfy the functions. You should not have all the blocks \n// added to the block chain in memory as it would cause a \n// memory overflow.\n\npublic class BlockChain {\n\n  public static final int CUT_OFF_AGE = 10;\n\n  /**\n    * create an empty block chain with just a genesis block. \n    * Assume {@code genesisBlock} is a valid block\n    */\n  public BlockChain(Block genesisBlock) {\n    // IMPLEMENT THIS\n  }\n\n  /** Get the maximum height block */\n  public Block getMaxHeightBlock() {\n    // IMPLEMENT THIS\n  }\n\n  /** \n    * Get the UTXOPool for mining a new block on top of max \n    * height block \n    */\n  public UTXOPool getMaxHeightUTXOPool() {\n    // IMPLEMENT THIS\n  }\n\n  /** Get the transaction pool to mine a new block */\n  public TransactionPool getTransactionPool() {\n    // IMPLEMENT THIS\n  }\n\n  /**\n    * Add {@code block} to the block chain if it is valid. For \n    * validity, all transactions should be valid and block \n    * should be at {@code height &gt; (maxHeight - CUT_OFF_AGE)}.\n    * For example, you can try creating a new block over the \n    * genesis block (block height 2) if the block chain height\n    * is {@code &lt;= CUT_OFF_AGE + 1}. As soon as {@code height &gt;\n    * CUT_OFF_AGE + 1}, you cannot create a new block at height\n    * 2.\n    * @return true if block is successfully added\n    */\n  public boolean addBlock(Block block) {\n    // IMPLEMENT THIS\n  }\n\n  /** Add a transaction to the transaction pool */\n  public void addTransaction(Transaction tx) {\n    // IMPLEMENT THIS\n  }\n}</pre>\n <p>\n  The\n  <strong>\n   BlockChain\n  </strong>\n  class is responsible for maintaining a block chain. Since the entire block chain could be huge in size, you should only keep around the most recent blocks. The exact number to store is up to your design, as long as you\u2019re able to implement all the API functions.\n </p>\n <p>\n  Since there can be (multiple) forks, blocks form a tree rather than a list. Your design should take this into account. You have to maintain a UTXO pool corresponding to every block on top of which a new block might be created.\n </p>\n <p>\n  <strong>\n   Assumptions and hints:\n  </strong>\n </p>\n <ul bullettype=\"bullets\">\n  <li>\n   <p>\n    A new genesis block won\u2019t be mined. If you receive a block which claims to be a genesis block (parent is a null hash) in the\n    <strong>\n     addBlock(Block b)\n    </strong>\n    function, you can return\n    <strong>\n     false\n    </strong>\n    .\n   </p>\n  </li>\n  <li>\n   <p>\n    If there are multiple blocks at the same height, return the oldest block in\n    <strong>\n     getMaxHeightBlock()\n    </strong>\n    function.\n   </p>\n  </li>\n  <li>\n   <p>\n    Assume for simplicity that a coinbase transaction of a block is available to be spent in the next block mined on top of it. (This is contrary to the actual Bitcoin protocol when there is a \u201cmaturity\u201d period of 100 confirmations before it can be spent).\n   </p>\n  </li>\n  <li>\n   <p>\n    Maintain only one global Transaction Pool for the block chain and keep adding transactions to it on receiving transactions and remove transactions from it if a new block is received or created. It\u2019s okay if some transactions get dropped during a block chain reorganization, i.e., when a side branch becomes the new longest branch. Specifically, transactions present in the original main branch (and thus removed from the transaction pool) but absent in the side branch might get lost.\n   </p>\n  </li>\n  <li>\n   <p>\n    The coinbase value is kept constant at 25 bitcoins whereas in reality it halves roughly every 4 years and is currently 12.5 BTC.\n   </p>\n  </li>\n  <li>\n   <p>\n    When checking for validity of a newly received block, just checking if the transactions form a valid set is enough. The set need not be a maximum possible set of transactions. Also, you needn\u2019t do any proof-of-work checks.\n   </p>\n  </li>\n </ul>\n <p>\n  <u>\n   <strong>\n    Assignment files can be found\n    <a href=\"https://www.coursera.org/learn/cryptocurrency/resources/6dcZm\">\n     here\n    </a>\n    .\n   </strong>\n  </u>\n </p>\n</co-content>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "instructions"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "alternative-mining-puzzles",
+        [
+            [
+                "alternative-mining-puzzles",
+                [
+                    [
+                        "essential-puzzle-requirements",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/6SXJCWQxQ7GlyQlkMfOxCw?expiry=1500422400000&hmac=fHUHlpT8771mnNOVIl6ud_4o-6L-vk0Zqf9Ou7hRwiM&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/XPPRxkBCEeWkYw4zx_qqFQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=HnxfWlOQVr3qj~Tzhff9GUXldkn1lYKrP-tQPt1yYaBhizFSpz2slJk8781bjv0v~Qh5O6RQ0dnJhn5sZAY-h5MJJ7n-cv4MYOb5xfnDeuRWufVom~ok1XLOA8dv88VbH1hRRqDaQIFCjz31GdCXViKqiNdfTcd7rfujLiNSXwQ_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/6SXJCWQxQ7GlyQlkMfOxCw?expiry=1500422400000&hmac=ip4yUqfyCWwsItpgUZTFX8fbu0OL9yfcD_nAMaEtBXg&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "asic-resistant-puzzles",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/fXoOic8uT_C6DonPLq_wjA?expiry=1500422400000&hmac=C61rq6TRMl3tG_qSYMFQb6mheVrdcCvLasBDhhBR_Bw&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/Ri281I8QEeaapgob0rvkxw.processed/full/540p/index.mp4?Expires=1500422400&Signature=MAujLBZMmZuBHVoYTnbuXvVHllYn4AHbKGHL-ewnvL41qvHzlb7C1EibAn5gHIvkoFBuJrI3qJKNWFanOSYyeMjtMW8rr7leAmXPvsYdGdj7zTibF7B-uSIoxzRka7gfQHPiS6Ohega8WmJNDmqvpnbGsl1uQaBaoH7sq7Fi3fE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/fXoOic8uT_C6DonPLq_wjA?expiry=1500422400000&hmac=kyjN7_cgEAJ5RnWZWamMd299ac75ycg9v7jW-dmDJNo&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "proof-of-useful-work",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/rnW4Z13xQ_G1uGdd8ZPxzw?expiry=1500422400000&hmac=CpWAbJqYGM7TuchByCyAivPHCoXaO_yAshcpqN0H1DQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/yhsrbEBEEeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=lPZ7-rutkLMP42X0O4qOOG5iG7IjG8aGOt5Flgw942snKBxAq6qYhhd2zyhq0DPCPWOnzPB6IZwgWbWJuMROIrbyHf1i7zKiiQ9DUS0QpxtiCoXrIeGPvldy1j2jEo-veMBKSHteXEpdf3lfRi-ItcCPtay-BojsMOZKdH6fG-k_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/rnW4Z13xQ_G1uGdd8ZPxzw?expiry=1500422400000&hmac=jFBmDWd08qbYQJsBFLbEKexH98pVU3G_68WD9nYBkxU&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "nonoutsourceable-puzzles",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/TFKsYTJGQhKSrGEyRoIS3A?expiry=1500422400000&hmac=oPd_5NSROGg1lmklXHIugU5boX873jmEx6_sEy06yIE&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/rdSX2UBFEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=Lz7yM4kCGYBbuChwobsq52SxQboIPy9VhMsrJkA-1lmyMyrpM~TnZSfTNVzEhhiiQFve8XlvsDFrAIL4wQ3g~AuYGSiue0Hxjii2Woem-uMRIhELqszlhSRogBX5wokpW9vG9zbklEUkBIE617rb15CrfsAT77kesukkmpnGcnU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/TFKsYTJGQhKSrGEyRoIS3A?expiry=1500422400000&hmac=_Ux87lpzBB6PhKUz_4VFhyR9BfJ_hPJda_XaqLF6asU&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "proof-of-stake-virtual-mining",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/2hQCtwBPRq6UArcATyau3Q?expiry=1500422400000&hmac=h2Ai12iPzynJ67ioQdsIY6yCkKSooPHyuNOg9AkN4n8&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/7b4tG0BGEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=FLR-rBjX9aN57gILrFw4JpTJlmiK2G~evmyG8BV6tX6U-2762jFQ7x6UZULCtYBW28~izvDdDSWQWNW4LAmur9qy-yHFMdKzxAq2S1rkXmTtWFUixxmc9cHcIv7J7nKEDgbVLD4Bx9wszh8ZGlbYSsnPabsvONUuYdQ4pKwWbA8_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/2hQCtwBPRq6UArcATyau3Q?expiry=1500422400000&hmac=ch39p9V4y5Y8Vjwc7yc9NWXBkzg3T5oXqf0DCuE5n84&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "bitcoin-as-a-platform",
+        [
+            [
+                "bitcoin-as-a-platform",
+                [
+                    [
+                        "bitcoin-as-an-append-only-log",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/hc8m_1RNTguPJv9UTY4L5g?expiry=1500422400000&hmac=BV0lzEcKZ1SlYE-D8ZVVONKwwzEiPeuLKNLjC7qyOHQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/oDv9skKTEeWvqBKy5Iw0ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=JnkiYKdB1dpqJIrOG~aMRFFGdyHwi7-LsILbzRHqjfoM445qgvbz~4j1C1CfZ1XEXl893AIDw8DRj9B7hSpGsPCRkhiLt~3bQa8q223dpdkRgdpz8rcqpavEgxoLmFq8ThhYY1XW88Wz0xOtmJnxtnT2uo~5E7Po4HP7XXaTI80_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/hc8m_1RNTguPJv9UTY4L5g?expiry=1500422400000&hmac=DfNjQ-4Pad_POLUs8Ff2YMl37pdp9qzysxFJryJumPg&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "bitcoin-as-smart-property",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Ys1wIcfETEyNcCHHxKxMMw?expiry=1500422400000&hmac=QUmFl78oTMLpVb5p44H9mbUl_6hAt-D_6VYnk3kCZ74&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/nau05kKeEeWvqBKy5Iw0ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=REdBWNm4Snbt54GlK3GNwHI58ZSLQ7gojF7v1WJpF2mDBfBNR~EsaHF0VPoZq~s-Vt2XvKY1bFzNyk5FZnIHTpqa-KuJ3ij-BrX0PjGZwc~NTtnhOVFibigYIuF9IALbQrkdHKOhh-J2V3sJ12rTZePrUGryj49PQqx6Hgf7jUE_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Ys1wIcfETEyNcCHHxKxMMw?expiry=1500422400000&hmac=Mh1-ZSJDxUulnnqy1HkcZYvqiRaDM8l_FN8aC-xhjJ8&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "secure-multi-party-lotteries-in-bitcoin",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/INlIvkbjRzaZSL5G46c2XQ?expiry=1500422400000&hmac=0uxtzs6syCzbsQYTQujsP-ShbsSqdq3y8cUBwDumz34&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/2A-CVUKaEeWvqBKy5Iw0ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=g7cH5AXNMNb2h2oeYzrbSdxMsHDUuJU6-tcznNdaPwtD6zl07cam2NgNYiiUy0jgPyMCjgQ4EM1IGTt8zWNs-5XkJe9CSXn2TeB5nJDbidE45wX4LmH7GxVEDL5FFBdKlANga4P32LZNz8816dk0WT0dnlhRrFxdBeiGni9fCOc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/INlIvkbjRzaZSL5G46c2XQ?expiry=1500422400000&hmac=5f-5WYu9bbdsKu2Xy5ksPmkt-gJ0AKptD5xvtOMbjjc&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "bitcoin-as-randomness-source",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Ps921tXsTA6PdtbV7OwO_Q?expiry=1500422400000&hmac=utUUsgHqGCSb4HX_ObH6sqp0UwFLSp9mWFGKoR0aDRQ&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/_LIEvEKaEeWTRg7GRSXaTQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=Rkw30AZx8LTpJr5lND9lMU3zK39-lZsgtIrTBkksJ~koOP6x7VcqDwU4q8VMZ8WSN0cHTS~f9bLdqIJ3shgurryfGgF2rKeSM696LHlZr9jK3GWnrdTL8Jdhs9NkcTbnssWAU0~COHRSdU5CqCyDBvk~Usgne-h5dNihxP10EOU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/Ps921tXsTA6PdtbV7OwO_Q?expiry=1500422400000&hmac=CqIqMPCnXSGMprcfbm7GgRfaOkAGzrg2SXjXs_X1W2o&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "prediction-markets-real-world-data-feeds",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/hcV8RDOiSG2FfEQzothtvg?expiry=1500422400000&hmac=6013MzO8TNWqq3PXPEeCWojb5XWLExavA6e_qPz7YnE&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/G0rQCUKbEeWLQgr60MgtrQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=BqXA8prBbVvSxvTrUpChVJ6z6L2lBo2CN0WQkmEocAHKlO970RxlpQVliZAHLDsBlfVjm9yqUA3FENgSjL8mCOrnw47a48OPvnG5jRyiREW3mxdTomXvMHCve4hVhTSTd23m-ISCdQ4ASBeGHBzWtziNpaiHQcsgWt2mJwKA9Yk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/hcV8RDOiSG2FfEQzothtvg?expiry=1500422400000&hmac=rzy1Q6Fg-saWrTUdhZ1xYrIx3xUFcemnyUVoQn6w8h4&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "altcoins-and-the-cryptocurrency-ecosystem",
+        [
+            [
+                "altcoins-and-the-cryptocurrency-ecosystem",
+                [
+                    [
+                        "short-history-of-altcoins",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/ImRGppnjQHKkRqaZ4-ByGA?expiry=1500422400000&hmac=PB7ygLJsi_epW5t1I_i0zejvxsQ9wDGxNdJ5BklwikE&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/yJckDkBeEeWxgwoU-Y5WvQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=MrmDJXp8MOArfnw4myJYMraEskcPN2NBMZHhSSRcMefj5uwM3uyWmw~jdAgAgDJ0tNAwhh16Jzk80pnVQKHEE0A0j9F15ZsbJhpeG-qJJRQAvGdXsdLWdrwnsE3xh7h09PoHHDu9fbe-APVqdT60hHcI~sbhA3OicfLS3IGLRHA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/ImRGppnjQHKkRqaZ4-ByGA?expiry=1500422400000&hmac=G0_7i6CuJaBRBEy4lipOcEitYxZeQq0rZoi6oEF3Skw&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "interaction-between-bitcoin-and-altcoins",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/xVslNkEnSk-bJTZBJ7pPBQ?expiry=1500422400000&hmac=YokSgMtJfd_k2b5iLruRwMz7hetd0uI2Vd3CpUkCz28&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/sZQcUkBgEeWxgwoU-Y5WvQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=K7bomK0eiIsZkF6-M4RW9P~6JfCOzqPjtlCdJIXwnNGhcoHmxVBOVSVxgtD7npW-dbf2VjfGUU0Lb6avt2jswotAa4U7IpqBDpGoqig02xFkX98F83Pi~~ehUIn-ZfEHKv55leVlyiGNvv9xMbsA2sbs23r9yjlHQ2Olk6WHtBc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/xVslNkEnSk-bJTZBJ7pPBQ?expiry=1500422400000&hmac=Yzj_UWRxmnFxkhrxciLGlOeWpIoO7qZRhZVe17j54W0&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "lifecycle-of-an-altcoin",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/HCVQGc3_T0alUBnN_w9GYg?expiry=1500422400000&hmac=KA1wyc34l_yPaGQls-aSby6VfXod76rAmRphLGNXA0c&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/lNMB9EBhEeW_MxLSMNWlQw.processed/full/540p/index.mp4?Expires=1500422400&Signature=DthYD-MCSE7tUJMEv7uQ576CXpzQki0Mb6M01F8Vmn3p6CpmivaF6W0yPVfrV6yWom4MunEshseETCwgycU~26TGYEVkrwRepp7yHVTkoxRTLv25OstJFREXg-AOp3Fz-ifWWYUo~SVL272qOHBkFFlTYFRWtnT33fmY8MPimTI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/HCVQGc3_T0alUBnN_w9GYg?expiry=1500422400000&hmac=1fwpKIhptcpTJJ0c6_-8oGSUdzMGgHqYh4MC4QVRQ60&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "bitcoin-backed-altcoins-side-chains",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/whkkQaOWQbaZJEGjluG2gQ?expiry=1500422400000&hmac=k1qGCb5jYoPdxd_NbJ9eah9j2cytBCvTqlNMltwuL0s&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/g64DMkBiEeWqOA5s4RkvPQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=FHvP9mGofmmME3yl0l9QbBiOgrWJp~U~B1l6TCEqYtA0VgctvP8Kcj4N9pBoI7n8y8D4Xgr3luCgUp6b7V-9WRfVY~YjBuqNdUz3jhhByPN5LmLNPkj1GMXath~vt6ToXqINUuAJTbru-AYAgyBZ7zFNsf8PN9Q1kJrFduw9KtI_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/whkkQaOWQbaZJEGjluG2gQ?expiry=1500422400000&hmac=9suLV_c5lrCuPN8KayMd7Z1wXq2nHI-Pi0Fr5Mu3NaY&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "the-future-of-bitcoin",
+        [
+            [
+                "the-future-of-bitcoin",
+                [
+                    [
+                        "the-block-chain-as-a-vehicle-for-decentralization",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/xAXR-AQKSkiF0fgECrpI1g?expiry=1500422400000&hmac=b4w3p3Z_hqgq5ic6AAbQv7FVoAPwZkK5Eiz6bOj9wMw&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/4wTgSEHiEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=Vm04y7HZaGFadEeOL5is2xvxC-m06tC0gyqyb12pyvYCwBPD368SPYazbqR~cDiMIv0AojVDiqYPt3Bx5zUHWzRXo53GJU1RgPcDeIaUNDyYc5bauS3DMnyxHODN94UsAkROKnCp2-kJSDZp6yfEdu92LLZWDVhhvdsY99l0258_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/xAXR-AQKSkiF0fgECrpI1g?expiry=1500422400000&hmac=yE2pwSvGOWGf0jtxfHZQ3YVgOWIyblaeszgbJxYMly8&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "routes-to-blockchain-integration",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/03uuFoiETZW7rhaIhA2VuA?expiry=1500422400000&hmac=bsbJxs3zBpK0tBJuv4F3u2205j7itPtlI8jQdOJqw2I&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/IlxYpkBlEeWM-wqPLzH4ew.processed/full/540p/index.mp4?Expires=1500422400&Signature=INJJkQofA0dJk81cVV4Yh5i7LRMR-vQSqWb2ocroVLHMixDOLNG4xPLf4mc3~1ujVCWBgleqTpmKsNH9RH3yn-EzwMmuls0LwwvmsYLw9hDYqGfs4-yBDSRgh22UfN39YbGI1d0mGYlhX3gpp3AphsoRf20faH6SMXAbxL9IihU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/03uuFoiETZW7rhaIhA2VuA?expiry=1500422400000&hmac=9B2TuiYL0WbecotBwTyIhLsgr5y6BCXD57j1feitj28&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "what-can-we-decentralize",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/4UuFiEV5QLmLhYhFebC5Ww?expiry=1500422400000&hmac=juT2ItBFRMHODvQ92mXZVYjWW5qPX3ZeTfnz77mLZck&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/ePDjW0BnEeWNnhLBZy0LHQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=H~bGwrUgMw6Pn36ilJoZNgpboDwYRSEJ-UJJ~E1q0KEw9QnLDOd4zs~t3Fan1z3F6IoFeifP5li~l3C7ddESUIHFedFl-AbHYAu4QZmcA0zxEg2gu2U-g5nEDPED08yu-ZaorKrg-YVVtAlLMRJZeV2lacvv0mz~WmJ3HX75mS0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/4UuFiEV5QLmLhYhFebC5Ww?expiry=1500422400000&hmac=CxSEcr_QcatXyZpETYkhn-ObanIX_VfT-JPwjmOBNI4&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        "when-is-decentralization-a-good-idea",
+                        {
+                            "en.txt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/ZJvRR-1KTyOb0UftSl8jUQ?expiry=1500422400000&hmac=xnSQyKGi4ZvdZWS8Q1bEl7BqKGSzqHr9q0kShK4xS0w&fileExtension=txt",
+                                    ""
+                                ]
+                            ],
+                            "mp4": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/kjyQzUBnEeWxgwoU-Y5WvQ.processed/full/540p/index.mp4?Expires=1500422400&Signature=PWE8Ego88debR0taK-1roBEHcxh1lVjTGcn-nKJDh6bJkeh9v8sajL-2FS6OtGwVFXya667iBmin1-ZZ1o~8xZdY22O70EZRRjz4k25Z9sxVoYahrlWBLaBmIuVcfkzJlf9z0mqzvVTM6JpczekvgcyXxJPtMenxrBP3PoFxvAc_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    ""
+                                ]
+                            ],
+                            "en.srt": [
+                                [
+                                    "https://www.coursera.org/api/subtitleAssetProxy.v1/ZJvRR-1KTyOb0UftSl8jUQ?expiry=1500422400000&hmac=QQnYlaAynegqOa7kh1FF8IYpmPO-AGvSnUaA_Mzplww&fileExtension=srt",
+                                    ""
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ],
+    [
+        "Resources",
+        [
+            [
+                "scrooge-coin-files",
+                [
+                    [
+                        "",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<co-content>\n <p>\n  Attached are resources for the Scrooge Coin Assignment.\n </p>\n <p>\n </p>\n <asset assettype=\"generic\" extension=\"zip\" id=\"NJgsJ7J-EeaKxxJm7j2RrA\" name=\"assignment1starterCode\">\n </asset>\n <p>\n </p>\n</co-content>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "resources"
+                                ]
+                            ],
+                            "zip": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/_9e774c98c31fe49134631df7948d9779_assignment1starterCode.zip?Expires=1500422400&Signature=hQQjrvo68Au9nxuKElRuYJP4r8cOPmnUzdT1fhulC52SPf-ZPtdDtSGpYp7xmUfGW2zUjgunkSt4pOYSOo3N~QxhnUFIgVOCOf-qk6z5d0Yd4kNOfElIik~R-03uBsqCSiCby85z9g~ubSqsypTaPxO0ltYCJe4VSgjFWHK8aWA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    "assignment1starterCode"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "consensus-from-trust-files",
+                [
+                    [
+                        "",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<co-content>\n <p>\n  Attached are resources for the 'Consensus from Trust' assignment.\n </p>\n <asset assettype=\"generic\" extension=\"zip\" id=\"MxmXcZiLEealdA62Aswjhg\" name=\"assignment2starterCode\">\n </asset>\n <p>\n </p>\n</co-content>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "resources"
+                                ]
+                            ],
+                            "zip": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/_d362cb8e46417bf4985914a5dac681e7_assignment2starterCode.zip?Expires=1500422400&Signature=Xha9OT-GQLf0fHzdb2tNS308ZW-95o2L1~4tI5pLdiXt6aKc82KFUG4cZ9706pTMy5r5tpEr10s5Gr05liHt5-W4Kq7xNj01zpV~-F88TGwr1I2sekx58jTbwF-eQ7vdTDjnr8IhDacUMmoIDhXcfB8phQVPT8BoUXsqfw1v7aM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    "assignment2starterCode"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ],
+            [
+                "block-chain-files",
+                [
+                    [
+                        "",
+                        {
+                            "html": [
+                                [
+                                    "#inmemory#<meta charset=\"utf-8\"/>\n<co-content>\n <p>\n  Attached are resources for the 'Block Chain' assignment.\n </p>\n <asset assettype=\"generic\" extension=\"zip\" id=\"84yx8JepEeadUQ4CCWyuXA\" name=\"assignment3starterCode\">\n </asset>\n <p>\n </p>\n</co-content>\n<style>\n body {\n    padding: 50px 85px 50px 85px;\n}\n\ntable th, table td {\n    border: 1px solid #e0e0e0;\n    padding: 5px 20px;\n    text-align: left;\n}\ninput {\n    margin: 10px;\n}\n}\nth {\n    font-weight: bold;\n}\ntd, th {\n    display: table-cell;\n    vertical-align: inherit;\n}\nimg {\n    height: auto;\n    max-width: 100%;\n}\npre {\n    display: block;\n    margin: 20px;\n    background: #424242;\n    color: #fff;\n    font-size: 13px;\n    white-space: pre-wrap;\n    padding: 9.5px;\n    margin: 0 0 10px;\n    border: 1px solid #ccc;\n}\n</style>\n<script async=\"\" src=\"https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML\" type=\"text/javascript\">\n</script>\n<script type=\"text/x-mathjax-config\">\n MathJax.Hub.Config({\n    tex2jax: {\n      inlineMath: [ ['$$','$$'], ['$','$'] ],\n      displayMath: [ [\"\\\\[\",\"\\\\]\"] ],\n      processEscapes: true\n    }\n  });\n</script>\n",
+                                    "resources"
+                                ]
+                            ],
+                            "zip": [
+                                [
+                                    "https://d18ky98rnyall9.cloudfront.net/_41a9c5a561c125d218fd8fe142ebc7e3_assignment3starterCode.zip?Expires=1500422400&Signature=Cv1KvrQY29Pyh1v5C9ouy2WjFj~lMkdg2KKZnsuP1n6WtLXLOa9mwXBjJaUrNR6a470u-Dh1Uq6v3c8i9PamvMoVHVQ94Yyok7vT9nVEpfVRzGrw~BVgSIOrgmsafxxUqg0kOWsdZh2wS1qeMytZvoEYfBRJ74dTUdNWKHMVB1M_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A",
+                                    "assignment3starterCode"
+                                ]
+                            ]
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ]
+]

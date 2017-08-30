@@ -1,0 +1,1603 @@
+1
+00:00:03,670 --> 00:00:07,300
+In segment 1.1 we're going to talk
+about cryptographic hash functions.
+
+2
+00:00:07,300 --> 00:00:09,820
+We'll talk about what they are,
+and what their properties are.
+
+3
+00:00:09,820 --> 00:00:13,340
+And then later we'll move on and
+talk about what their applications are.
+
+4
+00:00:13,340 --> 00:00:16,890
+So, a cryptographic hash function
+is a mathematical function.
+
+5
+00:00:16,890 --> 00:00:19,210
+And it has three attributes
+that we need to start with.
+
+6
+00:00:19,210 --> 00:00:20,080
+First of all,
+
+7
+00:00:20,080 --> 00:00:25,170
+a hash function can take any string as
+input, absolutely any string of any size.
+
+8
+00:00:25,170 --> 00:00:27,301
+It produces a fixed-size output,
+
+9
+00:00:27,301 --> 00:00:32,352
+we'll use a 256 bits in this series of
+lectures, cuz that's what bitcoin does.
+
+10
+00:00:32,352 --> 00:00:35,249
+And it has to be efficiently computable,
+meaning given a string,
+
+11
+00:00:35,249 --> 00:00:38,950
+in a reasonable length of time,
+you can figure out what the output is.
+
+12
+00:00:38,950 --> 00:00:40,219
+So that's a hash function, but
+
+13
+00:00:40,219 --> 00:00:44,080
+we're going to need hash functions
+that are cryptographically secure.
+
+14
+00:00:44,080 --> 00:00:46,910
+The cryptographic properties of
+hash functions are a complicated
+
+15
+00:00:46,910 --> 00:00:47,790
+topic in general.
+
+16
+00:00:47,790 --> 00:00:50,970
+But we're gonna focus here on
+three particular properties.
+
+17
+00:00:50,970 --> 00:00:52,470
+And I'll explain in
+a minute what those are.
+
+18
+00:00:53,530 --> 00:00:56,543
+In particular,
+that the function is collision-free,
+
+19
+00:00:56,543 --> 00:01:00,071
+that it has a hiding property,
+and that it's puzzle-friendly.
+
+20
+00:01:00,071 --> 00:01:03,850
+And for each of these, I'll talk about
+what the property is, what it means.
+
+21
+00:01:03,850 --> 00:01:07,990
+And then I'll talk about why it's useful
+to have a function that has that property.
+
+22
+00:01:07,990 --> 00:01:09,920
+So, first, collision-free.
+
+23
+00:01:09,920 --> 00:01:13,112
+So, the first property that we need
+from a cryptographic hash function
+
+24
+00:01:13,112 --> 00:01:14,503
+is that it's collision free.
+
+25
+00:01:14,503 --> 00:01:18,967
+And what that means is that it's
+impossible, nobody can find values x and
+
+26
+00:01:18,967 --> 00:01:21,559
+y, such that x and
+y are different, and yet
+
+27
+00:01:21,559 --> 00:01:23,800
+the hash of x is equal to the hash of y.
+
+28
+00:01:25,090 --> 00:01:27,950
+And so if we look at the operation
+of the function as depicted
+
+29
+00:01:27,950 --> 00:01:29,700
+by one of these red arrows.
+
+30
+00:01:29,700 --> 00:01:33,000
+Here's x and H(x), and here's y and H(y).
+
+31
+00:01:33,000 --> 00:01:36,380
+Then nobody can find
+a situation like this.
+
+32
+00:01:36,380 --> 00:01:38,980
+That you have an x and y that
+are separate, and yet when you hash them,
+
+33
+00:01:38,980 --> 00:01:40,940
+they hash to the same value.
+
+34
+00:01:40,940 --> 00:01:44,180
+Now one thing to notice is that I said,
+nobody can find.
+
+35
+00:01:44,180 --> 00:01:46,660
+I didn't say that there is no collision,
+
+36
+00:01:46,660 --> 00:01:49,660
+because if you think about it
+there has to be a collision.
+
+37
+00:01:49,660 --> 00:01:54,390
+Collisions do exist, and to understand
+why that is, we can use this diagram.
+
+38
+00:01:54,390 --> 00:01:58,602
+Over here on the left, I'm depicting all
+of the possible inputs to this function,
+
+39
+00:01:58,602 --> 00:02:00,302
+which can be a string of any size.
+
+40
+00:02:00,302 --> 00:02:03,289
+And over here,
+I have all of the possible outputs,
+
+41
+00:02:03,289 --> 00:02:06,640
+which has to be string
+of 256 bits in size.
+
+42
+00:02:06,640 --> 00:02:11,850
+So the right hand side here, the outputs,
+there are only 2 to the 256 possibilities.
+
+43
+00:02:11,850 --> 00:02:13,930
+Over here, there are more possibilities.
+
+44
+00:02:13,930 --> 00:02:16,610
+And so if you think that every
+point here on the left is gonna
+
+45
+00:02:16,610 --> 00:02:19,600
+be mapped by an arrow,
+to some point on the right.
+
+46
+00:02:19,600 --> 00:02:22,570
+You can see that as you go from all
+the points over here on the left into
+
+47
+00:02:22,570 --> 00:02:24,620
+the right, it has to get crowded.
+
+48
+00:02:24,620 --> 00:02:27,950
+And in fact,
+that there have to be multiple
+
+49
+00:02:27,950 --> 00:02:31,130
+values over here on the left that
+map to the same output over here.
+
+50
+00:02:31,130 --> 00:02:35,050
+In fact, in general, there will be
+a very large number of possible inputs
+
+51
+00:02:35,050 --> 00:02:36,860
+that map to any particular output.
+
+52
+00:02:36,860 --> 00:02:39,070
+So collisions do exist.
+
+53
+00:02:39,070 --> 00:02:41,070
+I said before nobody can find a collision.
+
+54
+00:02:41,070 --> 00:02:42,420
+And that's the key question.
+
+55
+00:02:42,420 --> 00:02:43,710
+We know collisions exist.
+
+56
+00:02:43,710 --> 00:02:47,660
+The question is are there any collisions
+that are findable by regular people
+
+57
+00:02:47,660 --> 00:02:48,910
+using regular computers?
+
+58
+00:02:50,590 --> 00:02:52,900
+Okay, now to make things even worse,
+
+59
+00:02:52,900 --> 00:02:55,150
+I said that it has to be
+impossible to find a collision.
+
+60
+00:02:55,150 --> 00:02:56,820
+Let me tell you how to find a collision,
+
+61
+00:02:56,820 --> 00:02:59,230
+because there's a method
+that's guaranteed to work.
+
+62
+00:02:59,230 --> 00:03:01,178
+And the method works like this.
+
+63
+00:03:01,178 --> 00:03:05,560
+That we're gonna pick 2 to
+the 130 randomly chosen inputs,
+
+64
+00:03:05,560 --> 00:03:07,760
+over on the left cloud of
+that previous diagram.
+
+65
+00:03:07,760 --> 00:03:12,180
+And if we pick those 2 to
+the 130 randomly chosen inputs,
+
+66
+00:03:12,180 --> 00:03:17,190
+it turns out there's a 99.8% chance that
+at least two of them are going to collide.
+
+67
+00:03:17,190 --> 00:03:20,360
+And so this is a simple method for
+finding a collision.
+
+68
+00:03:20,360 --> 00:03:23,730
+It works no matter what the hash function
+is, but of course, the problem is,
+
+69
+00:03:23,730 --> 00:03:26,230
+that this takes a very,
+very long time to do.
+
+70
+00:03:26,230 --> 00:03:30,020
+You have to compute the hash
+function 2 to the 130 times.
+
+71
+00:03:30,020 --> 00:03:32,680
+And that's, of course,
+an astronomical number.
+
+72
+00:03:32,680 --> 00:03:35,290
+This method works no matter
+which hash function we're using.
+
+73
+00:03:35,290 --> 00:03:38,221
+There's still a 99.8%
+probability that this works.
+
+74
+00:03:38,221 --> 00:03:41,740
+And if it doesn't work, just try it again,
+it'll probably work the next time.
+
+75
+00:03:41,740 --> 00:03:43,680
+But, this doesn't really matter.
+
+76
+00:03:43,680 --> 00:03:47,570
+And the reason it doesn't really matter,
+is that this procedure takes 2 to
+
+77
+00:03:47,570 --> 00:03:50,660
+the 130 steps,
+in order to get to that high probability.
+
+78
+00:03:50,660 --> 00:03:51,950
+So, we can say something like this.
+
+79
+00:03:51,950 --> 00:03:56,050
+We can say that if every
+computer ever made by humanity
+
+80
+00:03:56,050 --> 00:04:00,840
+was computing since the beginning
+of the entire Universe up to now,
+
+81
+00:04:00,840 --> 00:04:05,150
+the odds that they would have found a
+collision is still infinitesimally small.
+
+82
+00:04:05,150 --> 00:04:08,690
+So small that it's way less than the odds
+that the Earth will be destroyed by
+
+83
+00:04:08,690 --> 00:04:13,440
+a giant meteor in the next two seconds,
+which didn't happen.
+
+84
+00:04:14,510 --> 00:04:17,600
+Okay, so we know how to find a collision.
+
+85
+00:04:17,600 --> 00:04:20,220
+But this method takes too long to matter.
+
+86
+00:04:20,220 --> 00:04:23,840
+The question is, is there some other
+method that could be used on a particular
+
+87
+00:04:23,840 --> 00:04:26,820
+hash function,
+in order to find a collision?
+
+88
+00:04:26,820 --> 00:04:29,760
+And that's the question
+that is harder to answer.
+
+89
+00:04:29,760 --> 00:04:31,530
+Is there a faster way to find collisions?
+
+90
+00:04:31,530 --> 00:04:34,660
+Well, for some possible values of
+hash functions, of course there are.
+
+91
+00:04:34,660 --> 00:04:38,912
+For example, if our hash function
+were to simply take the input,
+
+92
+00:04:38,912 --> 00:04:44,830
+modulo 2 to the 256, that is, it just
+selected the last 256 bits of the input.
+
+93
+00:04:44,830 --> 00:04:48,180
+Then we would know an easy
+way to find a collision.
+
+94
+00:04:48,180 --> 00:04:54,110
+One collision would be the values 3,
+and 3 plus 2 to the 256.
+
+95
+00:04:54,110 --> 00:04:55,220
+So, for
+
+96
+00:04:55,220 --> 00:04:59,420
+some possible values of the hash function,
+it's very easy to find a collision.
+
+97
+00:04:59,420 --> 00:05:00,430
+For others, we don't know.
+
+98
+00:05:01,750 --> 00:05:04,691
+Now, one thing I need to note
+is that there's no hash function
+
+99
+00:05:04,691 --> 00:05:07,970
+in existence which has been
+proven to be collision free.
+
+100
+00:05:07,970 --> 00:05:11,842
+There are just some that people have tried
+really, really hard to find collisions and
+
+101
+00:05:11,842 --> 00:05:12,881
+haven't succeeded.
+
+102
+00:05:12,881 --> 00:05:17,483
+And so we choose to believe
+that those are collision free.
+
+103
+00:05:17,483 --> 00:05:22,560
+Okay, now,
+what good does collision freedom do us?
+
+104
+00:05:22,560 --> 00:05:25,690
+If we can assume that we have a hash
+function that is collision free,
+
+105
+00:05:25,690 --> 00:05:28,495
+then we can use that hash
+function as message digest.
+
+106
+00:05:28,495 --> 00:05:30,082
+And what I mean by that is the following.
+
+107
+00:05:30,082 --> 00:05:33,071
+That if we know that x and
+y have the same hash,
+
+108
+00:05:33,071 --> 00:05:36,490
+then it's safe to assume that x and
+y are the same.
+
+109
+00:05:36,490 --> 00:05:39,892
+Because if someone knew an x and y that
+were different, that had the same hash,
+
+110
+00:05:39,892 --> 00:05:41,650
+of course, that would be a collision.
+
+111
+00:05:41,650 --> 00:05:45,910
+Since there's not a collision that we know
+of, then knowing the hashes are the same,
+
+112
+00:05:45,910 --> 00:05:48,340
+we can assume that
+the values are the same.
+
+113
+00:05:48,340 --> 00:05:51,540
+And this let's us use the hash
+as a kind of message digest.
+
+114
+00:05:51,540 --> 00:05:54,980
+Suppose, for example,
+that we had a file, a really big file.
+
+115
+00:05:54,980 --> 00:05:58,840
+And we wanted to be able to recognize
+later whether another file was the same
+
+116
+00:05:58,840 --> 00:06:02,300
+as the file we saw the first time, right?
+
+117
+00:06:02,300 --> 00:06:05,200
+So one way to do that would be
+to save the whole big file.
+
+118
+00:06:05,200 --> 00:06:08,370
+And then when we saw another file later,
+just compare them.
+
+119
+00:06:08,370 --> 00:06:11,930
+But because we have hashes that
+we believe are collision free,
+
+120
+00:06:11,930 --> 00:06:16,120
+it's more efficient to just remember
+the hash of the original file.
+
+121
+00:06:16,120 --> 00:06:19,480
+Then if someone shows us a new file,
+and claims that it's the same,
+
+122
+00:06:19,480 --> 00:06:22,380
+we can compute the hash of that
+new file and compare the hashes.
+
+123
+00:06:22,380 --> 00:06:23,990
+If the hashes are the same,
+
+124
+00:06:23,990 --> 00:06:26,630
+then we conclude that the files
+must have been the same.
+
+125
+00:06:26,630 --> 00:06:30,767
+And that gives us a very efficient way
+to remember things we've seen before and
+
+126
+00:06:30,767 --> 00:06:32,390
+recognize them again.
+
+127
+00:06:32,390 --> 00:06:35,440
+And, of course,
+this is useful because the hash is small,
+
+128
+00:06:35,440 --> 00:06:39,710
+it's only 256 bits, while the original
+file might be really big.
+
+129
+00:06:39,710 --> 00:06:41,650
+So hash is useful as a message digest.
+
+130
+00:06:41,650 --> 00:06:44,890
+And we'll see, later on in this lecture,
+and in subsequent lectures,
+
+131
+00:06:44,890 --> 00:06:47,430
+why it's useful to use
+hash as a message digest.
+
+132
+00:06:49,190 --> 00:06:52,910
+So, the second property that we want from
+our hash function is that it's hiding.
+
+133
+00:06:52,910 --> 00:06:55,370
+And the property that we
+want is something like this.
+
+134
+00:06:55,370 --> 00:06:58,270
+That if we're given the output
+of the hash function,
+
+135
+00:06:58,270 --> 00:07:01,980
+that there's no feasible way to
+figure out what the input x was.
+
+136
+00:07:01,980 --> 00:07:05,810
+The problem is that this
+property doesn't exactly hold.
+
+137
+00:07:05,810 --> 00:07:09,010
+And to understand why that's the case,
+let's look at this example.
+
+138
+00:07:10,100 --> 00:07:14,070
+So here, what we're going to do is
+an experiment where we flip a coin.
+
+139
+00:07:14,070 --> 00:07:16,470
+And if the result of
+the coin flip was heads,
+
+140
+00:07:16,470 --> 00:07:19,330
+we're going to return the hash
+of the string "heads".
+
+141
+00:07:19,330 --> 00:07:22,720
+And if the result was tails, we're going
+to return the hash of the string "tails".
+
+142
+00:07:24,130 --> 00:07:26,730
+And now we're gonna ask someone
+who didn't see the coin flip, but
+
+143
+00:07:26,730 --> 00:07:31,590
+only saw this hash output, to figure out
+what the string was that was hashed.
+
+144
+00:07:31,590 --> 00:07:33,071
+That, of course, is going to be easy.
+
+145
+00:07:33,071 --> 00:07:39,180
+It's easy in this scenario to find what
+the input string was, it's easy to find x.
+
+146
+00:07:39,180 --> 00:07:42,530
+You simply compute the hash
+of the string "heads" and
+
+147
+00:07:42,530 --> 00:07:44,610
+the hash of the string "tails",
+and you see which one you got.
+
+148
+00:07:45,810 --> 00:07:49,980
+And so, in just a couple of steps,
+you can figure out what x was.
+
+149
+00:07:49,980 --> 00:07:51,980
+So the reason this example failed,
+
+150
+00:07:51,980 --> 00:07:57,010
+that is the reason why an adversary
+was able to guess what the string was,
+
+151
+00:07:57,010 --> 00:08:00,580
+was that there were only
+a couple of possible values of x.
+
+152
+00:08:01,770 --> 00:08:05,223
+And so, if we're gonna have
+a hiding property like this,
+
+153
+00:08:05,223 --> 00:08:10,410
+it needs to be the case that there's no
+value of x which is particularly likely.
+
+154
+00:08:10,410 --> 00:08:15,412
+That is, x has to be chosen from a set
+that's, in some sense, very spread out.
+
+155
+00:08:15,412 --> 00:08:20,290
+So that this method for the adversary of
+just trying all the possible values of x,
+
+156
+00:08:20,290 --> 00:08:24,525
+or just trying few values of x that are
+especially likely, is not going to work.
+
+157
+00:08:24,525 --> 00:08:28,210
+So the hiding property that we
+are going to need to set up
+
+158
+00:08:28,210 --> 00:08:30,220
+is a little bit more complicated.
+
+159
+00:08:30,220 --> 00:08:34,272
+And the way we're gonna fix this problem
+with the common value x, like heads and
+
+160
+00:08:34,272 --> 00:08:36,101
+tails, is we're gonna take the x.
+
+161
+00:08:36,101 --> 00:08:39,782
+And we're gonna put next to it, we're
+gonna concatenate with it, a value, r,
+
+162
+00:08:39,782 --> 00:08:42,720
+which is chosen from a distribution
+that's really spread out.
+
+163
+00:08:43,880 --> 00:08:47,550
+And so this H(r | x),
+
+164
+00:08:47,550 --> 00:08:51,720
+that means take all the bits of r,
+and put after them all the bits of x.
+
+165
+00:08:51,720 --> 00:08:55,140
+And so what we're going to say is
+given the hash of r together with x,
+
+166
+00:08:55,140 --> 00:08:56,822
+that it's infeasible to find x.
+
+167
+00:08:56,822 --> 00:09:01,546
+And that this will be true in
+the formally stated property that,
+
+168
+00:09:01,546 --> 00:09:07,231
+if r is a random value chosen from
+a distribution that has high min-entropy,
+
+169
+00:09:07,231 --> 00:09:11,272
+then, given H(r | x),
+it's infeasible to find x.
+
+170
+00:09:11,272 --> 00:09:13,220
+And what does high min-entropy mean?
+
+171
+00:09:13,220 --> 00:09:17,150
+Well, it captures this intuitive idea that
+r is chosen from a distribution that's
+
+172
+00:09:17,150 --> 00:09:18,380
+really spread out.
+
+173
+00:09:18,380 --> 00:09:22,330
+And what that means specifically is that
+there is no particular value that r could
+
+174
+00:09:22,330 --> 00:09:26,710
+have had, that would occur with
+more than a negligible probability.
+
+175
+00:09:26,710 --> 00:09:31,470
+So, for example, if r is chosen uniformly
+from among all of the strings that are 256
+
+176
+00:09:31,470 --> 00:09:37,170
+bits long, then any particular string was
+chosen with probability 1 in 2 to the 256,
+
+177
+00:09:37,170 --> 00:09:39,600
+which is truly a negligible value.
+
+178
+00:09:39,600 --> 00:09:41,680
+So, as long as r was chosen that way,
+
+179
+00:09:41,680 --> 00:09:45,200
+then the hash of r concatenated
+with x is going to hide x.
+
+180
+00:09:45,200 --> 00:09:49,962
+And that's the hiding property that
+the hash function will be deemed to have.
+
+181
+00:09:49,962 --> 00:09:54,130
+Okay, now let's look at an application
+of that hiding property.
+
+182
+00:09:54,130 --> 00:09:57,341
+And, in particular, what we wanna do
+is something called a commitment.
+
+183
+00:09:57,341 --> 00:10:00,847
+And this is kind of the digital analogy
+of taking a value, a number, and
+
+184
+00:10:00,847 --> 00:10:02,367
+sealing it in an envelope, and
+
+185
+00:10:02,367 --> 00:10:06,580
+putting that envelope out on the table,
+where everyone can see it.
+
+186
+00:10:06,580 --> 00:10:08,989
+Now, when you do that, you've
+committed to what's in the envelope.
+
+187
+00:10:09,990 --> 00:10:12,710
+But you haven't opened it,
+it's secret from everyone else.
+
+188
+00:10:12,710 --> 00:10:16,770
+Later, you can open the envelope and
+get out the value, but it's sealed.
+
+189
+00:10:16,770 --> 00:10:18,630
+So commit to a value and reveal it later.
+
+190
+00:10:18,630 --> 00:10:20,720
+We wanna do that in a digital sense.
+
+191
+00:10:20,720 --> 00:10:24,230
+So, to be more specific about what is
+the API that we're going to provide here,
+
+192
+00:10:24,230 --> 00:10:28,540
+the commitment API looks like this,
+that there are two things you can do.
+
+193
+00:10:28,540 --> 00:10:30,530
+First, you can commit to a message.
+
+194
+00:10:30,530 --> 00:10:33,810
+And that's going to return two values,
+a commitment and a key.
+
+195
+00:10:33,810 --> 00:10:37,150
+Think of the commitment as the envelope
+that you're gonna put on the table, and
+
+196
+00:10:37,150 --> 00:10:40,350
+the key as a secret key for
+unlocking the envelope.
+
+197
+00:10:40,350 --> 00:10:45,380
+Then later, you allow someone else
+to verify, given the commitment and
+
+198
+00:10:45,380 --> 00:10:47,903
+given a key, which you've told them
+in the meantime, and the message.
+
+199
+00:10:47,903 --> 00:10:51,990
+So they can verify that that commitment,
+key, and message really do go together.
+
+200
+00:10:51,990 --> 00:10:54,430
+And this will return a true or false.
+
+201
+00:10:54,430 --> 00:10:59,372
+Okay, now to seal an msg in an envelope,
+what we do is we commit to the message.
+
+202
+00:10:59,372 --> 00:11:03,390
+And that returns a commitment and a key,
+and then we publish the commitment.
+
+203
+00:11:03,390 --> 00:11:05,370
+That's putting the envelope on the table.
+
+204
+00:11:05,370 --> 00:11:09,589
+Now, later, to open the envelope, what
+we're going to do is publish the key and
+
+205
+00:11:09,589 --> 00:11:11,403
+the message that we committed to.
+
+206
+00:11:11,403 --> 00:11:14,211
+And then anybody can use this verify call,
+
+207
+00:11:14,211 --> 00:11:18,345
+with the commitment that we
+published previously, the key and
+
+208
+00:11:18,345 --> 00:11:23,893
+message that we just announced, to check
+the validity of our opening the envelope.
+
+209
+00:11:23,893 --> 00:11:26,439
+Okay, and the property,
+of course, we want from this,
+
+210
+00:11:26,439 --> 00:11:28,500
+is that it behaves like
+sealing an envelope.
+
+211
+00:11:28,500 --> 00:11:31,978
+And, in particular,
+the two security properties are these.
+
+212
+00:11:31,978 --> 00:11:35,130
+First, given com, the commitment,
+the envelope on the table,
+
+213
+00:11:35,130 --> 00:11:38,180
+that someone just looking at the envelope
+can't figure out what the message is.
+
+214
+00:11:39,190 --> 00:11:41,840
+The second property is that it's binding,
+that when you commit
+
+215
+00:11:41,840 --> 00:11:44,620
+to what's in the envelope,
+you can't change your mind later.
+
+216
+00:11:44,620 --> 00:11:47,510
+That is, it's infeasible to
+find two different messages,
+
+217
+00:11:47,510 --> 00:11:49,790
+such that you can commit to one message,
+and
+
+218
+00:11:49,790 --> 00:11:53,100
+then later claim that you committed to
+another, and the whole thing will verify.
+
+219
+00:11:54,600 --> 00:11:57,030
+Okay, so how do we know that
+these two properties hold?
+
+220
+00:11:57,030 --> 00:11:59,790
+Well, first we need to talk about
+how we're actually gonna implement
+
+221
+00:11:59,790 --> 00:12:00,640
+commitments.
+
+222
+00:12:00,640 --> 00:12:02,789
+And the way we're gonna implement
+commitments is like this.
+
+223
+00:12:03,830 --> 00:12:06,560
+That in order to commit
+to a value message,
+
+224
+00:12:06,560 --> 00:12:10,800
+we're going to generate a random
+256 bit value and call it the key.
+
+225
+00:12:10,800 --> 00:12:14,760
+And then we're going to,
+as the commitment,
+
+226
+00:12:14,760 --> 00:12:18,800
+return the hash of the key concatenated
+together with the message.
+
+227
+00:12:18,800 --> 00:12:25,320
+And as the key value,
+we're going to return H of this key.
+
+228
+00:12:25,320 --> 00:12:29,940
+And then later, to verify, someone is
+going to compute this same hash of
+
+229
+00:12:29,940 --> 00:12:33,672
+the key they were given,
+concatenated with the message.
+
+230
+00:12:33,672 --> 00:12:37,803
+And they're gonna check whether
+that's equal to the commitment that
+
+231
+00:12:37,803 --> 00:12:38,860
+they saw, okay?
+
+232
+00:12:38,860 --> 00:12:42,350
+So this is a way of using hash
+functions of both in the commitment and
+
+233
+00:12:42,350 --> 00:12:43,850
+in the verification.
+
+234
+00:12:43,850 --> 00:12:45,210
+So now the security properties.
+
+235
+00:12:45,210 --> 00:12:49,115
+If we go down to the security properties
+that were at the bottom of the previous
+
+236
+00:12:49,115 --> 00:12:53,521
+slide, and we just plug in the definitions
+of how we're going to implement this here.
+
+237
+00:12:53,521 --> 00:12:57,618
+That is, this used to say com,
+given com infeasible to find msg,
+
+238
+00:12:57,618 --> 00:12:59,341
+we just plug in what com is.
+
+239
+00:12:59,341 --> 00:13:03,110
+Com is the hash of key
+concatenated with msg.
+
+240
+00:13:03,110 --> 00:13:06,660
+And similarly down here,
+this is what happens when we take
+
+241
+00:13:06,660 --> 00:13:11,310
+what was written there before and
+plug in the definition of verify in com.
+
+242
+00:13:11,310 --> 00:13:16,120
+Okay, so now what these properties become,
+the first one is given H(key | msg),
+
+243
+00:13:16,120 --> 00:13:18,560
+it's infeasible to find msg.
+
+244
+00:13:18,560 --> 00:13:21,460
+Well, it turns out that that's
+exactly the hiding property
+
+245
+00:13:21,460 --> 00:13:23,180
+that we talked about before.
+
+246
+00:13:23,180 --> 00:13:27,010
+Key was chosen random 256-bit value.
+
+247
+00:13:27,010 --> 00:13:33,590
+And therefore, the hiding property
+says that if we take the message, and
+
+248
+00:13:33,590 --> 00:13:37,390
+we put before it something that was chosen
+from a very spread out distribution,
+
+249
+00:13:37,390 --> 00:13:41,770
+like I said a random 256-bit value,
+then it's infeasible to find the message.
+
+250
+00:13:41,770 --> 00:13:43,770
+So this is exactly the hiding property.
+
+251
+00:13:43,770 --> 00:13:48,460
+And this one down here turns out to be
+exactly the collision-free property.
+
+252
+00:13:48,460 --> 00:13:52,050
+So that if someone can find two messages
+which have the same hash like this,
+
+253
+00:13:52,050 --> 00:13:53,850
+well then they have
+an input value here and
+
+254
+00:13:53,850 --> 00:13:56,800
+an input value there that are different,
+and yet those have the same hash.
+
+255
+00:13:56,800 --> 00:14:00,200
+And so because of the two security
+properties we've talked about for
+
+256
+00:14:00,200 --> 00:14:02,719
+hashes so far,
+this commitment scheme will work,
+
+257
+00:14:02,719 --> 00:14:06,015
+in the sense that it will have
+the necessary security properties.
+
+258
+00:14:06,015 --> 00:14:10,540
+Okay, so that's the second security
+property of hashes, that they're hiding.
+
+259
+00:14:10,540 --> 00:14:13,140
+And the application of
+that is commitments.
+
+260
+00:14:13,140 --> 00:14:17,080
+The third security property we're going
+to need is that they're puzzle-friendly.
+
+261
+00:14:17,080 --> 00:14:19,200
+And this is, again,
+a little bit more complicated,
+
+262
+00:14:19,200 --> 00:14:21,870
+but let me just go through it bit by bit.
+
+263
+00:14:21,870 --> 00:14:25,612
+That for any possible output value y that
+you might want from the hash function.
+
+264
+00:14:25,612 --> 00:14:28,740
+We're going to use y as an output
+value of the hash later.
+
+265
+00:14:28,740 --> 00:14:31,960
+That if k is chosen from a distribution
+that has high min-entropy.
+
+266
+00:14:31,960 --> 00:14:36,181
+That is, k is chosen randomly from
+some set that's super spread out.
+
+267
+00:14:36,181 --> 00:14:41,620
+Then there's no way to find an x, such
+that the hash of k and x is equal to y.
+
+268
+00:14:41,620 --> 00:14:46,251
+So, what this means is basically that if
+someone wants to target the hash function,
+
+269
+00:14:46,251 --> 00:14:49,592
+if they want it to come out to
+some particular output value y.
+
+270
+00:14:49,592 --> 00:14:54,614
+That if there's part of the input that
+is chosen in a suitably randomized way,
+
+271
+00:14:54,614 --> 00:15:00,390
+that it's very difficult to find another
+value that hits exactly that target.
+
+272
+00:15:00,390 --> 00:15:02,290
+So the application we're
+going to use of this,
+
+273
+00:15:02,290 --> 00:15:04,430
+is we're going to build a search puzzle.
+
+274
+00:15:04,430 --> 00:15:09,270
+And what that means is we're going
+to build a mathematical problem,
+
+275
+00:15:09,270 --> 00:15:14,500
+which requires searching a very large
+space in order to find the solution.
+
+276
+00:15:14,500 --> 00:15:15,990
+And where there's no shortcuts,
+
+277
+00:15:15,990 --> 00:15:20,800
+a way to find a good solution,
+other than searching that large space.
+
+278
+00:15:20,800 --> 00:15:22,730
+That's a search puzzle.
+
+279
+00:15:22,730 --> 00:15:26,450
+To be more specific, the idea is
+that if we're given a puzzle ID,
+
+280
+00:15:26,450 --> 00:15:29,070
+which is chosen from some high
+min-entropy distribution.
+
+281
+00:15:29,070 --> 00:15:31,922
+That is some very spread out
+probability distribution.
+
+282
+00:15:31,922 --> 00:15:33,923
+And we're given a target set, Y,
+
+283
+00:15:33,923 --> 00:15:38,140
+which someone wants to make
+the hash function fall into.
+
+284
+00:15:38,140 --> 00:15:40,770
+Then we wanna try to find a solution, x.
+
+285
+00:15:40,770 --> 00:15:45,200
+So that if we hash the puzzle
+ID together with the solution X,
+
+286
+00:15:45,200 --> 00:15:47,530
+we get a result that's in the set Y.
+
+287
+00:15:47,530 --> 00:15:53,003
+So the idea is Y is a target range or
+a set of hash results that we want.
+
+288
+00:15:53,003 --> 00:15:56,810
+ID specifies a particular puzzle,
+and x is a solution to the puzzle.
+
+289
+00:15:57,815 --> 00:16:01,920
+And the puzzle-friendly property here
+implies that there's no solving strategy
+
+290
+00:16:01,920 --> 00:16:06,450
+for this puzzle, which is much better
+than just trying random values of x.
+
+291
+00:16:06,450 --> 00:16:10,980
+And so if we wanna pose a puzzle
+that's difficult to solve, that we can
+
+292
+00:16:10,980 --> 00:16:14,790
+do it this way, as long as we can generate
+puzzle IDs in a suitably random way.
+
+293
+00:16:14,790 --> 00:16:18,540
+And we're going to use that later
+when we talk about bitcoin mining.
+
+294
+00:16:18,540 --> 00:16:21,560
+That's the sort of computational
+puzzle we're going to use.
+
+295
+00:16:21,560 --> 00:16:25,070
+Okay, so we've talked about three
+properties of hash functions and
+
+296
+00:16:25,070 --> 00:16:27,030
+one application of each of those.
+
+297
+00:16:27,030 --> 00:16:30,100
+Now let me talk just very briefly about
+the particular hash function we're going
+
+298
+00:16:30,100 --> 00:16:30,930
+to use.
+
+299
+00:16:30,930 --> 00:16:32,760
+There are lots of hash
+functions in existence, but
+
+300
+00:16:32,760 --> 00:16:35,293
+this is the one bitcoin uses, and
+it's a pretty good one to use.
+
+301
+00:16:35,293 --> 00:16:40,862
+It called SHA-256 or SHA-256,
+and it works like this.
+
+302
+00:16:40,862 --> 00:16:44,242
+Basically, it takes the message
+that you're hashing, and
+
+303
+00:16:44,242 --> 00:16:47,810
+it breaks it up into blocks
+that are 512 bits in size.
+
+304
+00:16:47,810 --> 00:16:50,730
+The message isn't gonna be,
+in general, necessarily exactly
+
+305
+00:16:50,730 --> 00:16:54,110
+a multiple of the block size, so we're
+going to add some padding at the end.
+
+306
+00:16:54,110 --> 00:16:57,120
+And the padding is gonna consist of,
+at the end of the padding,
+
+307
+00:16:57,120 --> 00:17:00,960
+a 64 bit length field, which is
+the length of the message in bits.
+
+308
+00:17:00,960 --> 00:17:03,406
+And then before that,
+it's gonna consist of a one bit,
+
+309
+00:17:03,406 --> 00:17:05,083
+followed by some number of zero bits.
+
+310
+00:17:05,083 --> 00:17:07,276
+And you choose the number of zero bits so
+
+311
+00:17:07,276 --> 00:17:10,970
+that this comes out exactly
+to the end of a block.
+
+312
+00:17:10,970 --> 00:17:12,430
+So once you've padded the message so
+
+313
+00:17:12,430 --> 00:17:16,940
+that its length is exactly a multiple
+of the 512 bit block size,
+
+314
+00:17:16,940 --> 00:17:20,480
+you then chop it up into blocks, and
+you then execute this computation.
+
+315
+00:17:20,480 --> 00:17:24,002
+You start with the 256
+bit value called the IV.
+
+316
+00:17:24,002 --> 00:17:27,120
+That's just a number that you
+look up in a standards document.
+
+317
+00:17:27,120 --> 00:17:30,584
+And then take the IV and
+the first block of the message.
+
+318
+00:17:30,584 --> 00:17:35,853
+You take those 768 total bits, and you
+run them through this special function,
+
+319
+00:17:35,853 --> 00:17:39,970
+c, the compression function,
+and out comes 256 bits.
+
+320
+00:17:39,970 --> 00:17:42,730
+You now take that with the next
+512 bits of the message,
+
+321
+00:17:42,730 --> 00:17:45,340
+run it through c again,
+and you keep going.
+
+322
+00:17:45,340 --> 00:17:50,710
+Each iteration of c crunches in another
+512 bit block of the message and
+
+323
+00:17:50,710 --> 00:17:55,140
+mixes it in,
+sort of logically to the result.
+
+324
+00:17:55,140 --> 00:17:56,810
+And when you get to the very end,
+
+325
+00:17:56,810 --> 00:17:59,950
+you have consumed all of the blocks
+of the message plus the padding.
+
+326
+00:17:59,950 --> 00:18:02,860
+The result is the hash,
+that's a 256 bit value.
+
+327
+00:18:02,860 --> 00:18:06,990
+And it's easy to show that, if this
+function, c, this compression function
+
+328
+00:18:06,990 --> 00:18:11,310
+is collision free, then this entire hash
+function will also be collision free.
+
+329
+00:18:11,310 --> 00:18:13,380
+The other properties are a little
+bit more complicated, so
+
+330
+00:18:13,380 --> 00:18:14,319
+I won't talk about them here.
+
+331
+00:18:15,840 --> 00:18:17,650
+Okay, so we've talked hash functions.
+
+332
+00:18:17,650 --> 00:18:19,635
+We've talked about what hash functions do.
+
+333
+00:18:19,635 --> 00:18:23,190
+We've talked about three properties
+of hash functions and applications of
+
+334
+00:18:23,190 --> 00:18:28,230
+those properties, and the specific
+hash function that we use in bitcoin.
+
+335
+00:18:28,230 --> 00:18:29,793
+In the next lecture segment,
+
+336
+00:18:29,793 --> 00:18:32,670
+we'll talk about ways of
+using hash functions to build
+
+337
+00:18:32,670 --> 00:18:37,252
+more complicated data structures that are
+used in distributed systems like bitcoin.

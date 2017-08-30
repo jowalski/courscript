@@ -2,51 +2,68 @@ import docopt
 import os.path
 import sys
 import pypandoc
-from courscript.courscript import Courscript
+import re
+from functools import partial
+from courscript.iter import CourseraWalker
+from courscript.write import write
 
 
 class CourscriptCLI:
-    def __init__(self):
-        self._entry()
+    SYLLABUS_SUFFIX = "-syllabus-parsed.json"
+    SYLLABUS_FILE_ERROR = "syllabus file name invalid"
 
-    def _entry(self):
+    def __init__(self):
+        self._run()
+
+    def _run(self):
         doc_str = """
 
-    Usage: courscript [-h] <FOLDER> <FILE_OUT> [options]
+    Usage: courscript [-h] <SYLLABUS> [options]
 
-    Convert srt files in FOLDER (at some level, not necessarily the first)
-    into a nicely formatted markdown document.
+    Convert srt files in course folder into a nicely formatted
+    markdown document.
 
     Arguments:
-      FOLDER       folder name
-      FILE_OUT     name of output markdown file name
+      SYLLABUS     syllabus file (json)
 
     Options:
       -h --help
-      -l split --split=split    split filename pattern [default: _]
-      -s sub --sub=sub          sub filename pattern [default: -]
-      -p path --path=path       srt file paths [default: */*.srt]
+      -n cname --cname          course name
+      -p path --path=path       base path [default: .]
+      -s subdir --subdir=sdir   sub-directory in course folder
+      -f fmts --fmts            resource formats to use [default: srt]
+      -o out --out              output file
       -d slides --slides=sld    pdf slide file paths
       -t html --html            output html file
       -c css --css=css          css style sheet to go with html
         """
-        args = docopt.docopt(doc_str, version='courscript version 0.1')
+        args = docopt.docopt(doc_str, version='courscript version 0.2')
 
-        folder = args['<FOLDER>']
-        if not os.path.isdir(folder):
-            exit('{} is not a folder'.format(folder))
-        # print(args)
-        self.cs = Courscript(args['<FOLDER>'], args['--path'], 1,
-                             args['--split'], args['--sub'],
-                             args['--slides'])
-        with open(args['<FILE_OUT>'], 'w') as f:
-            self.cs.print(f)
+        syllabus = args['<SYLLABUS>']
+        coursename = self.extract_coursename(syllabus) \
+            if args["--cname"] is None else args["--cname"]
+
+        self.cw = CourseraWalker(coursename, syllabus, args["--path"],
+                                 args["--subdir"],
+                                 re.split(" +", args["--fmts"]), True)
+
+        outname = args["--out"]
+        with (sys.stdout if outname is None else open(outname, 'w')) as f:
+            self.cw.apply(partial(write, fout=f))
         if args['--html']:
             pandoc_args = ['-s', '--self-contained']
             if args['--css']:
                 pandoc_args += ['-c {css}'.format(css=args['css'])]
-            md_file = args['<FILE_OUT>']
-            html_file = '{}.html'.format(os.path.splitext(md_file)[0])
-            pypandoc.convert(args['<FILE_OUT>'], 'html', extra_args=pandoc_args,
+            # md_file = args['<FILE_OUT>']
+            html_file = '{}.html'.format(os.path.splitext(outname)[0])
+            pypandoc.convert(outname, 'html', extra_args=pandoc_args,
                              outputfile=html_file)
         sys.exit()
+
+    @staticmethod
+    def extract_coursename(syllabus_path):
+        basename = os.path.basename(syllabus_path)
+        if basename.endswith(CourscriptCLI.SYLLABUS_SUFFIX):
+            return basename.replace(CourscriptCLI.SYLLABUS_SUFFIX, "")
+        else:
+            raise FileNotFoundError(CourscriptCLI.SYLLABUS_FILE_ERROR)

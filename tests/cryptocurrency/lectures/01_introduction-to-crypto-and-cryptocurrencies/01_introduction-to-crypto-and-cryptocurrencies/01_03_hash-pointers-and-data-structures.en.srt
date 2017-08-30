@@ -1,0 +1,741 @@
+1
+00:00:04,084 --> 00:00:08,680
+In section 1.2, we're going to talk about
+Hash Pointers and their application.
+
+2
+00:00:08,680 --> 00:00:12,040
+A hash pointer is a kind of data
+structure that turns out to be used a lot
+
+3
+00:00:12,040 --> 00:00:14,370
+in the systems that we're talking about.
+
+4
+00:00:14,370 --> 00:00:16,610
+And a hash pointer is
+basically a simple thing,
+
+5
+00:00:16,610 --> 00:00:19,980
+that we're going to take a pointer
+to where some information is stored.
+
+6
+00:00:19,980 --> 00:00:23,480
+And we're going to together with
+the pointer store a cryptographic hash of
+
+7
+00:00:23,480 --> 00:00:24,770
+the information.
+
+8
+00:00:24,770 --> 00:00:29,230
+So whereas a regular pointer gives you
+a way to retrieve the information.
+
+9
+00:00:29,230 --> 00:00:32,700
+A hash pointer is gonna let us
+ask to get the information back.
+
+10
+00:00:33,950 --> 00:00:37,300
+It's also gonna let us verify that
+the information hasn't changed.
+
+11
+00:00:37,300 --> 00:00:40,799
+So a hash pointer tells us where
+something is and what it's value was.
+
+12
+00:00:41,870 --> 00:00:45,630
+And we're gonna draw a hash
+pointer in diagrams like this.
+
+13
+00:00:45,630 --> 00:00:50,630
+That we're gonna have each of, and
+then an arrow that points to something.
+
+14
+00:00:50,630 --> 00:00:54,840
+So anything drawn like this, think of it
+as being a hash pointer to this thing.
+
+15
+00:00:54,840 --> 00:00:56,430
+It's a pointer to where it's stored and
+
+16
+00:00:56,430 --> 00:01:00,669
+it's also the hash of the value that
+this data had when we last saw it.
+
+17
+00:01:01,670 --> 00:01:03,880
+And we can take hash pointers and
+
+18
+00:01:03,880 --> 00:01:07,210
+we can use them to build all
+kinds of data structures.
+
+19
+00:01:07,210 --> 00:01:10,280
+So a key idea here,
+take any data structure or link lists or
+
+20
+00:01:10,280 --> 00:01:12,670
+binary search tree or
+something like that and
+
+21
+00:01:12,670 --> 00:01:16,220
+implement it with hash pointers instead
+of pointers as we normally would.
+
+22
+00:01:17,660 --> 00:01:21,660
+For example here is a linked list
+that we built with hash pointers.
+
+23
+00:01:21,660 --> 00:01:24,220
+And this is a data structure that
+we're gonna call a block chain.
+
+24
+00:01:25,440 --> 00:01:29,310
+So just like a regular linked list
+where you have a series of blocks and
+
+25
+00:01:29,310 --> 00:01:33,930
+each block has data as well as a pointer
+to the previous block in the list,
+
+26
+00:01:33,930 --> 00:01:37,640
+here the previous block pointer will
+be replaced with a hash pointer.
+
+27
+00:01:37,640 --> 00:01:41,700
+So it says where it is and what the value
+of this entire previous block was.
+
+28
+00:01:41,700 --> 00:01:46,610
+And we're going to store, we're gonna
+remember the head of the list like this.
+
+29
+00:01:46,610 --> 00:01:50,070
+Just as a regular hash pointer.
+
+30
+00:01:50,070 --> 00:01:54,110
+And a use case for this for a block
+train like this is a tamper evident log,
+
+31
+00:01:54,110 --> 00:01:57,730
+that is if we wanna build a log data
+structure that stores a bunch of data.
+
+32
+00:01:57,730 --> 00:02:02,110
+So that we can add data onto the end of
+the log but if somebody goes later and
+
+33
+00:02:02,110 --> 00:02:05,400
+messes with data that is earlier in
+the log we're going to be detect it.
+
+34
+00:02:05,400 --> 00:02:07,620
+That's what temper evidence means.
+
+35
+00:02:07,620 --> 00:02:12,560
+So to understand why a block chain
+gives us this tamper evident property.
+
+36
+00:02:12,560 --> 00:02:15,570
+Let's ask what happens if
+an adversary wants to go back and
+
+37
+00:02:15,570 --> 00:02:19,080
+tamper with data later that's
+in the middle of the chain.
+
+38
+00:02:19,080 --> 00:02:24,000
+So let's assume that an adversary wants
+to tamper with this block down here.
+
+39
+00:02:24,000 --> 00:02:25,366
+He wants to change the data here.
+
+40
+00:02:25,366 --> 00:02:28,120
+And he wants to do it
+in such a way that we,
+
+41
+00:02:28,120 --> 00:02:33,390
+the holders of the hash pointer at
+the head here, won't be able to detect it.
+
+42
+00:02:34,840 --> 00:02:38,980
+So the adversary changed
+the contents of this block.
+
+43
+00:02:38,980 --> 00:02:42,570
+And therefore, the hash here which
+is a hash of this entire block
+
+44
+00:02:42,570 --> 00:02:46,220
+is not going to mash up because
+the hash function is collision free,
+
+45
+00:02:46,220 --> 00:02:49,350
+it must be the case that the hash
+of this block is now different.
+
+46
+00:02:49,350 --> 00:02:53,340
+And so we could detect
+the inconsistency between this data and
+
+47
+00:02:53,340 --> 00:02:55,550
+the hash pointer that
+we remembered before or
+
+48
+00:02:55,550 --> 00:03:00,420
+we could do that unless the advisory
+allows tampers with the hash pointer.
+
+49
+00:03:00,420 --> 00:03:04,010
+If he tampers with this hash pointer
+then he makes these two match up.
+
+50
+00:03:04,010 --> 00:03:06,950
+But now he's changed
+the content of this block.
+
+51
+00:03:06,950 --> 00:03:09,780
+And what that means is that
+when we come back later and
+
+52
+00:03:09,780 --> 00:03:13,390
+hash the contents of this block,
+it's not going to match the hash
+
+53
+00:03:13,390 --> 00:03:17,200
+that we remembered before because
+the contents of the block has changed.
+
+54
+00:03:17,200 --> 00:03:20,310
+And so we're going to detect
+the inconsistency between
+
+55
+00:03:20,310 --> 00:03:23,320
+the contents of this block and this hash,
+
+56
+00:03:23,320 --> 00:03:28,890
+unless the adversary also tampers with
+the block over here on the right.
+
+57
+00:03:28,890 --> 00:03:32,990
+But now, when he does that, the hash
+of this block is not going to match
+
+58
+00:03:32,990 --> 00:03:36,650
+the hash that we remembered up here and
+the hash that we're holding on to.
+
+59
+00:03:36,650 --> 00:03:40,150
+And this the adversary can't tamper
+with because this is the value that we
+
+60
+00:03:40,150 --> 00:03:43,040
+remembered as being the head of the list.
+
+61
+00:03:43,040 --> 00:03:46,790
+And so the upshot of this is that if
+the adversary wants to tamper with data
+
+62
+00:03:46,790 --> 00:03:51,320
+anywhere in this entire chain, in order to
+keep the story consistent he's going to
+
+63
+00:03:51,320 --> 00:03:54,050
+have to tamper with hash pointers
+all the way back to the beginning.
+
+64
+00:03:54,050 --> 00:03:56,607
+And he's ultimately going to run
+into a road block because he's
+
+65
+00:03:56,607 --> 00:03:59,390
+wont be able to tamper
+with the head of the list.
+
+66
+00:03:59,390 --> 00:04:02,685
+And so what this means is that just
+by remembering this hash pointer,
+
+67
+00:04:02,685 --> 00:04:05,591
+we've essentially
+remembered a kind of hash,
+
+68
+00:04:05,591 --> 00:04:09,540
+a tamper evident hash of the entire
+list all the way back to the beginning.
+
+69
+00:04:09,540 --> 00:04:13,360
+And so we can build a block chain like
+this containing as many blocks as we want
+
+70
+00:04:13,360 --> 00:04:16,220
+going back to some special block
+at the beginning of the list which
+
+71
+00:04:16,220 --> 00:04:18,590
+we might call the genesis block.
+
+72
+00:04:18,590 --> 00:04:21,119
+And that's a tamper evidence log
+built out of the block chamber.
+
+73
+00:04:22,650 --> 00:04:26,360
+Now, another useful data structure
+that we can build using hash pointers
+
+74
+00:04:26,360 --> 00:04:28,220
+is a binary tree.
+
+75
+00:04:28,220 --> 00:04:30,340
+We can build a binary tree
+with hash pointers and
+
+76
+00:04:30,340 --> 00:04:35,470
+this is called in the jargon, a Merkle
+tree after Ralph Merkle who invented it.
+
+77
+00:04:35,470 --> 00:04:38,630
+And the idea is this, suppose we have
+a bunch of data blocks which we'll draw
+
+78
+00:04:38,630 --> 00:04:40,860
+across the bottom down here.
+
+79
+00:04:40,860 --> 00:04:44,410
+We're going to take consecutive
+pairs of these data blocks and for
+
+80
+00:04:44,410 --> 00:04:47,770
+these two data blocks we're going to build
+a data structure here that has two hash
+
+81
+00:04:47,770 --> 00:04:52,090
+pointers, one to each of these blocks,
+and similarly all the way across.
+
+82
+00:04:52,090 --> 00:04:54,239
+We'll then go another level up and
+
+83
+00:04:54,239 --> 00:04:58,993
+this block here will contain a hash
+pointer of these two children down here.
+
+84
+00:04:58,993 --> 00:05:01,628
+And so on, all the way back
+up to the root of the tree.
+
+85
+00:05:01,628 --> 00:05:05,244
+And then just like before we're going
+to remember just the hash pointer
+
+86
+00:05:05,244 --> 00:05:07,160
+up here at the head of the tree.
+
+87
+00:05:07,160 --> 00:05:07,800
+And we can then,
+
+88
+00:05:07,800 --> 00:05:11,720
+if we want traverse down through the hash
+pointers to any point in the list.
+
+89
+00:05:11,720 --> 00:05:15,020
+And we can make sure that the data
+hasn't been tampered with.
+
+90
+00:05:15,020 --> 00:05:18,620
+Because just like I showed
+you with the block chain,
+
+91
+00:05:18,620 --> 00:05:22,720
+if an adversary tampers with some block
+down here at the bottom with the data
+
+92
+00:05:22,720 --> 00:05:26,780
+that will cause the hash pointer
+that's one level up to not match.
+
+93
+00:05:26,780 --> 00:05:28,301
+So he'll have to tamper with that.
+
+94
+00:05:28,301 --> 00:05:35,239
+And therefore, he'll have to tamper with
+the hash pointer one level up from there.
+
+95
+00:05:35,239 --> 00:05:36,772
+And eventually he'll get up to the top,
+
+96
+00:05:36,772 --> 00:05:40,260
+where he won't be able to tamper with
+the hash pointer that we've remembered.
+
+97
+00:05:40,260 --> 00:05:45,170
+So again, any attempt to tamper with
+any piece of data across the bottom
+
+98
+00:05:45,170 --> 00:05:49,610
+will be in short against, by just
+remembering the hash pointer at the top.
+
+99
+00:05:50,660 --> 00:05:52,780
+Now, another nice feature
+about Merkle trees,
+
+100
+00:05:52,780 --> 00:05:57,770
+is that unlike the block chain that we
+built before, that if someone wants
+
+101
+00:05:57,770 --> 00:06:02,730
+to prove to us that a particular data
+block is a member of this Merkle tree.
+
+102
+00:06:02,730 --> 00:06:06,420
+All they need to show us
+is this amount of data.
+
+103
+00:06:06,420 --> 00:06:10,540
+So if we remember just the root and
+someone wants to convince us that this
+
+104
+00:06:10,540 --> 00:06:14,880
+block is in the Merkle tree,
+they need to show us this block.
+
+105
+00:06:14,880 --> 00:06:17,220
+And we can verify that
+the hash matches up.
+
+106
+00:06:17,220 --> 00:06:19,290
+And then they need to
+show us this block and
+
+107
+00:06:19,290 --> 00:06:22,130
+we can verify that the hash
+of this matches that.
+
+108
+00:06:22,130 --> 00:06:23,330
+They can show us this block.
+
+109
+00:06:23,330 --> 00:06:26,710
+We verify that the hash of this
+block matches this hash pointer.
+
+110
+00:06:26,710 --> 00:06:29,180
+And then they show us the data.
+
+111
+00:06:29,180 --> 00:06:33,970
+And just by verifying the hashes
+up to the root, we can ensure,
+
+112
+00:06:33,970 --> 00:06:37,170
+we can verify that this data
+block was in the Merkle tree.
+
+113
+00:06:37,170 --> 00:06:40,940
+So that takes about log n items
+that we need to be shown, and
+
+114
+00:06:40,940 --> 00:06:44,180
+it takes about log n time for
+us to verify it.
+
+115
+00:06:44,180 --> 00:06:48,280
+And so at the very large number of
+data blocks in the Merkle tree,
+
+116
+00:06:48,280 --> 00:06:52,290
+we can still verify proven membership
+in a relatively short time.
+
+117
+00:06:54,240 --> 00:06:56,380
+So Merkle trees have various advantages.
+
+118
+00:06:56,380 --> 00:06:59,120
+One advantage of course,
+is the tree holds many items but
+
+119
+00:06:59,120 --> 00:07:03,800
+we just need to remember the one
+root hash which is only 256 bits.
+
+120
+00:07:03,800 --> 00:07:08,100
+We can verify membership in a Merkle tree
+in logarithmic time and logarithmic space.
+
+121
+00:07:08,100 --> 00:07:09,130
+That's nice.
+
+122
+00:07:09,130 --> 00:07:11,380
+And there's a variant which
+is a sorted Merkle tree.
+
+123
+00:07:11,380 --> 00:07:15,090
+That's just a Merkle tree where we
+take the blocks at the bottom and
+
+124
+00:07:15,090 --> 00:07:16,460
+we sort them into some order.
+
+125
+00:07:16,460 --> 00:07:21,770
+Say alphabetical, lexicographic or numeric
+order or some order that we agree on.
+
+126
+00:07:21,770 --> 00:07:24,370
+Having done that,
+once we've sorted the Merkle tree now,
+
+127
+00:07:24,370 --> 00:07:27,610
+it's possible to verify
+non-membership in a Merkle tree.
+
+128
+00:07:27,610 --> 00:07:31,420
+That is, we can prove that a particular
+block is not in the Merkle tree.
+
+129
+00:07:31,420 --> 00:07:35,786
+And the way we do that is simply by
+showing a path to the item that's just
+
+130
+00:07:35,786 --> 00:07:39,797
+before where that item would be and
+just after where it would be.
+
+131
+00:07:39,797 --> 00:07:42,603
+And then we can say look, both of
+these items are in the Merkle tree,
+
+132
+00:07:42,603 --> 00:07:44,580
+they're consecutive.
+
+133
+00:07:44,580 --> 00:07:47,935
+And therefore there is no
+space in between them.
+
+134
+00:07:47,935 --> 00:07:50,096
+There is nothing in between them and so
+
+135
+00:07:50,096 --> 00:07:54,290
+the thing that we are trying to prove
+non-membership of can't be there.
+
+136
+00:07:54,290 --> 00:07:57,030
+Merkle tree is binary search tree,
+
+137
+00:07:57,030 --> 00:08:01,105
+built with hash pointers, we can do
+logarithmic time membership proofs,
+
+138
+00:08:01,105 --> 00:08:04,519
+non-membership proofs if we sort
+the tree and it is very efficient.
+
+139
+00:08:05,840 --> 00:08:09,050
+More generally, it turns out
+that we can use has pointers in
+
+140
+00:08:09,050 --> 00:08:13,520
+any pointer-based data structure as long
+as the data structure doesn't have cycles.
+
+141
+00:08:13,520 --> 00:08:15,060
+If there are cycles in the data structure,
+
+142
+00:08:15,060 --> 00:08:17,330
+then we won't be able to
+make all hashes match up.
+
+143
+00:08:17,330 --> 00:08:20,620
+If you think about it in
+an acyclic data structure,
+
+144
+00:08:20,620 --> 00:08:24,280
+we can sort of start near the lees or
+near the things that
+
+145
+00:08:24,280 --> 00:08:27,850
+don't have any pointers coming out of
+them compute the hashes of those and
+
+146
+00:08:27,850 --> 00:08:30,610
+then work our way back,
+sort of towards the beginning.
+
+147
+00:08:30,610 --> 00:08:33,680
+But in a structure with cycles,
+there's no end that we can start with and
+
+148
+00:08:33,680 --> 00:08:35,050
+compute back from.
+
+149
+00:08:35,050 --> 00:08:39,340
+So for example, a directed acyclic graph,
+out of hash pointers and
+
+150
+00:08:39,340 --> 00:08:43,400
+we'll be able to verify membership
+in that day very efficiently.
+
+151
+00:08:43,400 --> 00:08:45,520
+And it'll be easy to compute.
+
+152
+00:08:45,520 --> 00:08:47,900
+So this is a general
+trick you'll see over and
+
+153
+00:08:47,900 --> 00:08:51,480
+over throughout the distributed data
+structures and throughout the algorithms
+
+154
+00:08:51,480 --> 00:08:54,630
+that we talk about later in this
+lecture and in subsequent lectures.

@@ -4,14 +4,14 @@ from setuptools import setup, find_packages
 
 # https://packaging.python.org/en/latest/distributing/#working-in-development-mode
 setup(name='courscript',
-      version='0.1',
+      version='0.2',
       description='Generate readable documents from course video subtitles',
       url='http://github.com/jowalski/courscript',
       author='John Kowalski',
       author_email='jowalski@gmail.com',
       license='MIT',
       packages=find_packages(),
-      install_requires=['pysrt'],
+      install_requires=['pysrt', 'docopt', 'pypandoc', 'coursera-dl'],
       entry_points={
           'console_scripts': [
               'courscript = courscript.cli:CourscriptCLI'
