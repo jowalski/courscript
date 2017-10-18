@@ -66,6 +66,7 @@ class SubFile:
             if sub1.is_break(sub2):
                 yield subgroup
                 subgroup = Subgroup()
+        yield subgroup
 
     def _file_wrapper(self, filename):
         # a missing file returns a blank Sublist rather than an error

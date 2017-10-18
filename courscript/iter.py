@@ -4,11 +4,14 @@ from coursera.utils import normalize_path
 import configargparse as argparse
 import json
 
+# "CourseraWalker(\"algorithms-part1\",
+# \"algorithms-part1-syllabus-parsed.json\")"
+
 
 class CourseraWalker:
 
     def __init__(self, coursename, syllabus_file, path=".",
-                 subdir=None, formats=["srt"], combined=True):
+                 subdir=None, formats=["all"], combined=True):
         self.path = path
         self.coursename = coursename
         self.subdir = subdir
@@ -39,8 +42,7 @@ class CourseraWalker:
                 [False, combined]):
             self.parser.add_argument(flag, dest=dest, default=default)
 
-        arg_str = "-f \"{}\"".format(" ".join(formats))
-        self.args = self.parser.parse_args(arg_str)
+        self.args = self.parser.parse_args(["-f", " ".join(formats)])
 
     def _subpath(self):
         return os.path.join(self.coursename, self.subdir) if self.subdir \
@@ -50,8 +52,14 @@ class CourseraWalker:
         return self.walk_modules()
 
     def walk_modules(self):
-        return coursera.workflow._walk_modules(self.modules, self._subpath(),
-                                               self.path, None, self.args)
+        return ((CourseIter.CourseModule(m),
+                 CourseIter.CourseSection(s),
+                 CourseIter.CourseLecture(l),
+                 CourseIter.CourseResource(r)) for m, s, l, r in
+                coursera.workflow._walk_modules(self.modules, self._subpath(),
+                                                self.path, None, self.args))
+        # return coursera.workflow._walk_modules(self.modules, self._subpath(),
+        #                                        self.path, None, self.args)
 
     def iter_modules(self):
         return (CourseIter.CourseModule(module) for module in
@@ -86,7 +94,8 @@ class CourseraWalker:
 
     @staticmethod
     def resource_path(resource, lecture):
-        return normalize_path(lecture._iter_obj.filename(resource.fmt, resource.title))
+        return normalize_path(lecture._iter_obj.
+                              filename(resource.fmt, resource.title))
 
 
 class CourseIter:

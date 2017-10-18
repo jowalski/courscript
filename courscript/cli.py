@@ -31,8 +31,8 @@ class CourscriptCLI:
       -n cname --cname          course name
       -p path --path=path       base path [default: .]
       -s subdir --subdir=sdir   sub-directory in course folder
-      -f fmts --fmts            resource formats to use [default: srt]
-      -o out --out              output file
+      -f fmts --fmts            resource formats to use [default: all]
+      -o out --out=out          output file
       -d slides --slides=sld    pdf slide file paths
       -t html --html            output html file
       -c css --css=css          css style sheet to go with html
@@ -45,7 +45,7 @@ class CourscriptCLI:
 
         self.cw = CourseraWalker(coursename, syllabus, args["--path"],
                                  args["--subdir"],
-                                 re.split(" +", args["--fmts"]), True)
+                                 re.split(",", args["--fmts"]), True)
 
         outname = args["--out"]
         with (sys.stdout if outname is None else open(outname, 'w')) as f:

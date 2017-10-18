@@ -1,53 +1,80 @@
 from courscript.iter import CourseIter, CourseraWalker
 import re
 import sys
-from functools import singledispatch
+import os
+from functools import singledispatch, partial
 from courscript.para import Paralist
 
 
 class CourseTitle:
 
+    FMT = "{index}: {title}"
+
     def __init__(self, obj, split="_", sub="-"):
         """
         """
-        self.index, self.title = split_num(obj, split, sub)
-        self.fmt = "{index}: {title}"
+        self.index, self.title = self._split_num(obj, split, sub)
 
     @property
     def text(self):
         return self.title if self.index is None else \
-            self.fmt.format(index=self.index, title=self.title)
+            self.FMT.format(index=self.index, title=self.title)
 
-    def header(self, level=1):
+    def as_header(self, level=1):
+        return self.header(self.text, level=level)
+
+    @staticmethod
+    def header(text, level=1):
         atx_str = u'#' * level
-        return u'{0} {1} {0}'.format(atx_str, self.text)
+        return u'{0} {1} {0}'.format(atx_str, text)
+
+    @classmethod
+    def _split_num(cls, s, split="_", sub="-"):
+        try:
+            num, title = re.split(split, s, maxsplit=1)
+            num = int(num)
+        except ValueError:
+            num, title = None, s
+        return num, title.replace(sub, " ").title()
 
 
-def split_num(s, split="_", sub="-"):
-    try:
-        num, title = re.split(split, s, maxsplit=1)
-        num = int(num)
-    except ValueError:
-        num, title = None, s
-    return num, to_title(title, sub)
-
-
-def to_title(s, sub="-"):
-    return re.sub(sub, " ", s).title()
+prl = partial(print, end="\n\n")
 
 
 @singledispatch
 def write(obj, sobj=None, ssobj=None, sssobj=None, fout=sys.stdout):
-    print(CourseTitle(obj.name).header(CourseIter.order[type(obj)]),
-          end="\n\n", file=fout)
+    prl(CourseTitle(obj.name).as_header(CourseIter.order[type(obj)]),
+        file=fout)
 
 
 @write.register(CourseIter.CourseResource)
 def write_res(resource, lecture=None, sobj=None, ssobj=None, fout=sys.stdout):
-    print_link(resource.title + resource.fmt, resource.url, fout)
+    if resource.fmt.endswith("html"):
+        print_inline_html(resource, fout)
+    else:
+        print_link("{}.{}".format(resource.title, resource.fmt),
+                   resource.url, fout)
     if resource.fmt.endswith("srt"):
-        Paralist(CourseraWalker.resource_path(resource, lecture)).print(fout)
+        res_path = CourseraWalker.resource_path(resource, lecture)
+        if not os.path.exists(res_path):
+            raise FileNotFoundError("Could not find resource: {}".
+                                    format(res_path))
+        Paralist(res_path).print(fout, srt_escape_filter)
 
 
 def print_link(name, url, fout):
-    print("[{}]({})".format(name, url), end="\n\n", file=fout)
+    prl("[{}]({})".format(name, url), file=fout)
+
+
+def print_inline_html(resource, fout):
+    prl(CourseTitle.header(resource.title.title(),
+                           CourseIter.order[type(resource)]),
+        file=fout)
+    prl(re.sub("^#inmemory#", "", resource.url), file=fout)
+
+
+def srt_escape_filter(text):
+    return str(text).replace("_", "\_")\
+                    .replace("*", "\*")\
+                    .replace("`", "\`")\
+                    .replace("<", "\<")

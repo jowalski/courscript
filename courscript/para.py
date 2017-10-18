@@ -47,6 +47,12 @@ class Para(UserString):
         return len(self.data)
 
 
+def identity(*args):
+    if len(args) == 1:
+        return args[0]
+    return args
+
+
 class Paralist(UserList):
 
     def __init__(self, filename, slidelist=None,
@@ -64,12 +70,12 @@ class Paralist(UserList):
     def _print2nl(self, obj):
         print(obj, end='\n\n', file=self._fileio)
 
-    def print(self, file=sys.stdout):
+    def print(self, file=sys.stdout, str_filter=identity):
         self._fileio = file
         for para in self.data:
             if self.print_times:
                 self._print2nl(para.start_end_md())
-            self._print2nl(para)
+            self._print2nl(str_filter(para))
 
     @classmethod
     def _make_paras(cls, filename):

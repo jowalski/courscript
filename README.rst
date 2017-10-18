@@ -1,16 +1,15 @@
 courscript
 ===============
 
-courscript is a Python library for creating readable documents from
-video subtitle files.
+courscript is a Python library for creating readable documents from video
+subtitle files.
 
 Intro
 ===============
 
-For now courscript uses the pysrt library to read .srt or .vtt
-files. The target audience is viewers of online courses, the idea
-being that it is often helpful to have a text transcript, perhaps even
-_more_ useful for some than watching and listening.
+For now courscript uses the pysrt library to read .srt or .vtt files. The target
+audience is viewers of online courses, it is often helpful to have a text
+transcript, perhaps _more_ useful for some than watching and listening.
 
 Usage
 ===============
@@ -32,5 +31,3 @@ Usage
          -q           quiet mode
          -r           make report
          --path=path  srt file paths [default: */*.srt]
-
-  

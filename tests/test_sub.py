@@ -5,7 +5,8 @@ import unittest
 from pysrt.srtitem import SubRipItem
 from pysrt.srttime import SubRipTime
 from courscript.sub import SubFile, Sub
-from courscript.iter import CourseraWalker, CourseTitle
+from courscript.iter import CourseraWalker
+from courscript.write import CourseTitle
 from courscript.para import Para, Paralist
 import datetime
 import pysrt
@@ -108,13 +109,14 @@ class TestCourseWalker(unittest.TestCase):
             test_dir, self.coursename, self.subdir, self.module_name,
             self.module_name)
         self.first_resource_path = os.path.join(self.section_path,
-                                                "01_welcome.en.srt")
+                                                "01_01_welcome.en.srt")
 
     def create_walker(self):
         return CourseraWalker(self.coursename,
                               os.path.join(test_dir, self.syllabus_file),
                               subdir=self.subdir,
-                              path=test_dir)
+                              path=test_dir,
+                              formats=["srt"])
 
     def test_walker_iters(self):
         walker = self.create_walker()
